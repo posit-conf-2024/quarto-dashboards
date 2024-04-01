@@ -1,4 +1,4 @@
-WORKSHOP_TITLE
+Build-a-Dashboard Workshop
 ================
 
 ### posit::conf(2024)
