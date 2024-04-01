@@ -3,7 +3,7 @@ Build-a-Dashboard Workshop
 
 ### posit::conf(2024)
 
-by INSTRUCTOR_NAME
+by Mine Çetinkaya-Rundel
 
 -----
 
