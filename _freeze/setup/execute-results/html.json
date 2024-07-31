@@ -1,0 +1,15 @@
+{
+  "hash": "e2884ac9b4a520dc6a4e41481aeb768a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Setup instructions\"\n---\n\n\n\n\n-   Download and install the latest versions of R, RStudio, and Quarto:\n\n    -   R `4.4.1` or above: <https://cran.r-project.org>\n    -   RStudio `2024.04.2+764` or above: <https://posit.co/download/rstudio-desktop>\n    -   Quarto `1.5.55`: <https://quarto.org/docs/get-started>\n\n-   Install the following packages:\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\npkg_list <- c(\n  \"tidyverse\", \"gt\", \"ggthemes\", \"palmerpenguins\", \"quarto\", \"here\"\n)\ninstall.packages(pkg_list)\n```\n:::\n\n\n\n\n**[TO DO: Update packages]** \n\n-   Download `exercises.zip` at **[TO DO: Add link]** and unzip it on your Desktop or somewhere you can easily locate on your computer. Then, go to RStudio \\> File \\> New Project \\> Existing Directory and navigate to the unzipped `exercises` folder and create an RStudio project in there and open it.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

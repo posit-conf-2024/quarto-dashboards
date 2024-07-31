@@ -1,0 +1,14 @@
+---
+title: "Module four"
+---
+
+## Slides
+
+[View slides in full screen](4-module-four.html)
+
+```{=html}
+<iframe class="slide-deck" src="4-module-four.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+## Exercises
+
+To be posted.

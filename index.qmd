@@ -1,0 +1,28 @@
+---
+title: "Build-a-Dashboard Workshop"
+subtitle: "posit::conf(2024)"
+---
+
+<!-- # Abstract -->
+
+<!-- # Date + location -->
+
+## Schedule
+
+| Time          | Activity         |
+| :------------ | :--------------- |
+| 09:00 - 10:30 | Session 1        |
+| 10:30 - 11:00 | *Coffee break*   |
+| 11:00 - 12:30 | Session 2        |
+| 12:30 - 13:30 | *Lunch break*    |
+| 13:30 - 15:00 | Session 3        |
+| 15:00 - 15:30 | *Coffee break*   |
+| 15:30 - 17:00 | Session 4        |
+
+## Instructor
+
+[Dr. Mine Çetinkaya-Rundel](https://mine-cr.com/) (she/her) is Professor of the Practice at Duke University and Developer Educator at Posit. Mine's work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.
+
+------------------------------------------------------------------------
+
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).

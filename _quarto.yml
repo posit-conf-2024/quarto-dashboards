@@ -1,0 +1,62 @@
+project:
+  type: website
+  resources:
+    - exercises.zip
+
+website:
+  page-navigation: true
+  title: "Build-a-Dashboard Workshop"
+  description: "posit::conf(2024) - Build-a-Dashboard Workshop"
+
+  repo-url: https://github.com/posit-conf-2024/quarto-dashboards
+  repo-actions: [edit, issue]
+
+  open-graph: true
+
+  sidebar:
+    background: "#9bcbac"
+    logo: "images/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/posit-conf-2024/quarto-dashboards
+        text: "GitHub"
+      - icon: code-square
+        href: https://posit.cloud
+        text: "Posit Cloud"
+
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: setup.qmd
+        text: Setup
+      - section: "Modules"
+        contents:
+          - href: 1-module-one/index.qmd
+          - href: 2-module-two/index.qmd
+          - href: 3-module-three/index.qmd
+          - href: 4-module-four/index.qmd
+
+
+  page-footer:
+    right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, Mine Çetinkaya-Rundel"
+    background: "#9bcbac" # Arylide Yellow
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/quarto-asa.scss]
+      dark: [cosmo, style/quarto-asa.scss, style/dark.scss]
+    linkcolor: "#688773"
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+
+execute:
+  freeze: auto
