@@ -2,6 +2,10 @@
 title: "Module three"
 ---
 
+::: callout-note
+Materials for this module to be updated before the workshop start.
+:::
+
 ## Slides
 
 [View slides in full screen](3-module-three.html)

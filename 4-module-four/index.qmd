@@ -2,6 +2,10 @@
 title: "Module four"
 ---
 
+::: callout-note
+Materials for this module to be updated before the workshop start.
+:::
+
 ## Slides
 
 [View slides in full screen](4-module-four.html)

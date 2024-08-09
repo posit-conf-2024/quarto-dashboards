@@ -8,9 +8,9 @@
 
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
-$presentation-heading-color: #688773;
-$link-color: #688773;
-$code-color: #688773;
+$presentation-heading-color: #7A9857;
+$link-color: #7A9857;
+$code-color: #7A9857;
 $code-block-font-size: 0.7em;
 $presentation-h2-font-size: 1.4em !default;
 $presentation-font-size-root: 36px !default;
@@ -22,11 +22,11 @@ details>summary {
 }
 
 #title-slide .title {
-  color: #688773;
+  color: #7A9857;
 }
 
 #title-slide .subtitle {
-  color: #688773;
+  color: #7A9857;
   font-weight: bold;
 }
 
@@ -61,19 +61,19 @@ details>summary {
 
 .reveal .hand-green {
   font-family: 'Gochi Hand', cursive;
-  color: #688773;
+  color: #7A9857;
   font-size: 1.2em
 }
 
 .reveal .hand-green-large {
   font-family: 'Gochi Hand', cursive;
-  color: #688773;
+  color: #7A9857;
   font-size: 3em
 }
 
 .reveal .hand-green {
   font-family: 'Gochi Hand', cursive;
-  color: #688773;
+  color: #7A9857;
 }
 
 .reveal .slide .your-turn {
@@ -83,8 +83,8 @@ details>summary {
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #688773;
-  background-color: #68877350;
+  border-left: solid 5px #7A9857;
+  background-color: #7A985750;
 }
 
 .reveal .slide .our-turn {
@@ -94,6 +94,6 @@ details>summary {
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #80a9d7;
-  background-color: #80a9d750;
+  border-left: solid 5px #589398;
+  background-color: #58939850;
 }
