@@ -14,7 +14,7 @@ website:
   open-graph: true
 
   sidebar:
-    background: "#9bcbac"
+    background: "#7A9857"
     logo: "images/logo.png"
     pinned: true
     align: center
@@ -45,14 +45,14 @@ website:
   page-footer:
     right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, Mine Çetinkaya-Rundel"
-    background: "#9bcbac" # Arylide Yellow
+    background: "#7A9857"
 
 format:
   html:
     theme:
       light: [cosmo, style/quarto-asa.scss]
       dark: [cosmo, style/quarto-asa.scss, style/dark.scss]
-    linkcolor: "#688773"
+    linkcolor: "#589398"
     toc: true
     code-copy: true
     code-overflow: wrap
