@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -201,8 +201,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#r" id="toc-r" class="nav-link active" data-scroll-target="#r">R</a></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -226,27 +233,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>Prior to the workshop check you have the required software and set up any accounts you might need for publishing your dashboard.</p>
+<p>You will be able to follow along with this workshop in R or in Python. See the required software suite for each language below.</p>
+<section id="r" class="level2">
+<h2 class="anchored" data-anchor-id="r">R</h2>
 <ul>
-<li><p>Download and install the latest versions of R, RStudio, and Quarto:</p>
-<ul>
-<li>R <code>4.4.1</code> or above: <a href="https://cran.r-project.org" class="uri">https://cran.r-project.org</a></li>
-<li>RStudio <code>2024.04.2+764</code> or above: <a href="https://posit.co/download/rstudio-desktop" class="uri">https://posit.co/download/rstudio-desktop</a></li>
-<li>Quarto <code>1.5.55</code>: <a href="https://quarto.org/docs/get-started" class="uri">https://quarto.org/docs/get-started</a></li>
-</ul></li>
-<li><p>Install the following packages:</p></li>
+<li><p><a href="https://cran.r-project.org">R</a>: 4.4.1</p></li>
+<li><p><a href="https://quarto.org/docs/download/">Quarto</a>: v1.5</p></li>
+<li><p><a href="https://posit.co/download/rstudio-desktop/">RStudio</a>: 2024.04.2+764</p></li>
+<li><p>Packages:</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pkg_list <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"gt"</span>, <span class="st">"ggthemes"</span>, <span class="st">"palmerpenguins"</span>, <span class="st">"quarto"</span>, <span class="st">"here"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"gt"</span>, <span class="st">"ggthemes"</span>, <span class="st">"DT"</span>, <span class="st">"here"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pkg_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>[TO DO: Update packages]</strong></p>
+</section>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
 <ul>
-<li>Download <code>exercises.zip</code> at <strong>[TO DO: Add link]</strong> and unzip it on your Desktop or somewhere you can easily locate on your computer. Then, go to RStudio &gt; File &gt; New Project &gt; Existing Directory and navigate to the unzipped <code>exercises</code> folder and create an RStudio project in there and open it.</li>
+<li><a href="https://www.python.org/downloads/">Python</a>: 3</li>
 </ul>
+<!-- -->
+<ul>
+<li><p><a href="https://quarto.org/docs/download/">Quarto</a>: v1.5</p></li>
+<li><p><a href="https://code.visualstudio.com/download">VS Code</a> as well as the <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">VS Code Quarto Extension</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">VS Code Jupyter Extension</a></p></li>
+<li><p>Packages: We recommend <code>pip install</code>ing the following packages. If you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.</p></li>
+</ul>
+<pre><code>great_tables==0.10.0
+ipykernel==6.29.5
+jupyter==1.0.0
+pandas==2.2.2
+plotnine==0.13.6</code></pre>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -833,7 +855,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with 💛 and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
