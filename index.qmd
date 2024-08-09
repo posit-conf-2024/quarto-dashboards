@@ -3,25 +3,54 @@ title: "Build-a-Dashboard Workshop"
 subtitle: "posit::conf(2024)"
 ---
 
-<!-- # Abstract -->
+## Date + location
 
-<!-- # Date + location -->
+August 12, 2024
+
+9 am - 5 pm
+
+500 \| Elwha B
 
 ## Schedule
 
-| Time          | Activity         |
-| :------------ | :--------------- |
-| 09:00 - 10:30 | Session 1        |
-| 10:30 - 11:00 | *Coffee break*   |
-| 11:00 - 12:30 | Session 2        |
-| 12:30 - 13:30 | *Lunch break*    |
-| 13:30 - 15:00 | Session 3        |
-| 15:00 - 15:30 | *Coffee break*   |
-| 15:30 - 17:00 | Session 4        |
+| Time          | Activity       |
+|:--------------|:---------------|
+| 09:00 - 10:30 | Session 1      |
+| 10:30 - 11:00 | *Coffee break* |
+| 11:00 - 12:30 | Session 2      |
+| 12:30 - 13:30 | *Lunch break*  |
+| 13:30 - 15:00 | Session 3      |
+| 15:00 - 15:30 | *Coffee break* |
+| 15:30 - 17:00 | Session 4      |
+
+## Overview
+
+You already analyze and summarize your data in computational notebooks with R and/or Python.
+What’s next?
+You can share your insights or allow others to make their own conclusions in eye-catching dashboards and straight-forward to author, design, and deploy Quarto Dashboards, regardless of the language of your data processing, visualization, analysis, etc.
+With Quarto Dashboards, you can create elegant and production-ready dashboards using a variety of components, including static graphics (ggplot2, Matplotlib, Seaborn, etc.), interactive widgets (Plotly, Leaflet, Jupyter Widgets, htmlwidgets, etc.), tabular data, value boxes, text annotations, and more.
+Additionally, with intelligent resizing of components, your Quarto Dashboards look great on devices of all sizes.
+And importantly, you can author Quarto Dashboards without leaving the comfort of your “home” – in plain text markdown with any text editor (VS Code, RStudio, Neovim, etc.) or any notebook editor (JupyterLab, etc.).
+
+This workshop will walk you through building an increasingly complex dashboard using various layout options and deploy them as static web pages (with no special server required) as well as with a Shiny Server on the backend for enhanced interactivity.
+
+This course is for you if you:
+
+-   do data analysis in computational notebooks
+
+-   share your results with your audience in static or interactive dashboards
+
+-   want to improve the design, user interface, and experience of your dashboards
 
 ## Instructor
 
-[Dr. Mine Çetinkaya-Rundel](https://mine-cr.com/) (she/her) is Professor of the Practice at Duke University and Developer Educator at Posit. Mine's work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.
+[Mine Çetinkaya-Rundel](https://mine-cr.com/) is Professor of the Practice at Duke University and Developer Educator at Posit.
+Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM.
+Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education.
+As part of this project she co-authored four open-source introductory statistics textbooks – latest is the 2nd edition of [Introduction to Modern Statistics](https://openintro-ims2.netlify.app/).
+She is also a co-author on [R for Data Science](https://r4ds.hadley.nz/), the creator and maintainer of [Data Science in a Box](https://datasciencebox.org/), and she teaches popular [data analysis](https://www.coursera.org/specializations/statistics) and [data science](https://www.coursera.org/learn/data-visualization-transformation-r) with R courses on Coursera.
+Mine is a Fellow of the ASA and Elected Member of the ISI as well as a Waller and Hogg award winner for teaching excellence.
+In 2024, she was elected as Vice President of the International Association for Statistical Education (IASE).
 
 ------------------------------------------------------------------------
 
