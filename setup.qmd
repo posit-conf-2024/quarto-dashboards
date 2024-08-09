@@ -2,23 +2,47 @@
 title: "Setup instructions"
 ---
 
--   Download and install the latest versions of R, RStudio, and Quarto:
+Prior to the workshop check you have the required software and set up any accounts you might need for publishing your dashboard.
 
-    -   R `4.4.1` or above: <https://cran.r-project.org>
-    -   RStudio `2024.04.2+764` or above: <https://posit.co/download/rstudio-desktop>
-    -   Quarto `1.5.55`: <https://quarto.org/docs/get-started>
+You will be able to follow along with this workshop in R or in Python.
+See the required software suite for each language below.
 
--   Install the following packages:
+## R
+
+-   [R](https://cran.r-project.org): 4.4.1
+
+-   [Quarto](https://quarto.org/docs/download/): v1.5
+
+-   [RStudio](https://posit.co/download/rstudio-desktop/): 2024.04.2+764
+
+-   Packages:
 
 ```{r}
 #| eval: false
 
 pkg_list <- c(
-  "tidyverse", "gt", "ggthemes", "palmerpenguins", "quarto", "here"
+  "tidyverse", "gt", "ggthemes", "DT", "here"
 )
 install.packages(pkg_list)
 ```
 
-**[TO DO: Update packages]** 
+## Python
 
--   Download `exercises.zip` at **[TO DO: Add link]** and unzip it on your Desktop or somewhere you can easily locate on your computer. Then, go to RStudio \> File \> New Project \> Existing Directory and navigate to the unzipped `exercises` folder and create an RStudio project in there and open it.
+-   [Python](https://www.python.org/downloads/): 3
+
+```{=html}
+<!-- -->
+```
+-   [Quarto](https://quarto.org/docs/download/): v1.5
+
+-   [VS Code](https://code.visualstudio.com/download) as well as the [VS Code Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) and [VS Code Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
+-   Packages: We recommend `pip install`ing the following packages. If you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.
+
+```
+great_tables==0.10.0
+ipykernel==6.29.5
+jupyter==1.0.0
+pandas==2.2.2
+plotnine==0.13.6
+```
