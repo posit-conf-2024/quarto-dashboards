@@ -36,15 +36,15 @@ website:
         text: Setup
       - section: "Modules"
         contents:
-          - href: 1-module-one/index.qmd
-          - href: 2-module-two/index.qmd
-          - href: 3-module-three/index.qmd
-          - href: 4-module-four/index.qmd
+          - href: 1-hello-dashboards/index.qmd
+          - href: 2-dashboard-components/index.qmd
+          - href: 3-theming-styling/index.qmd
+          - href: 4-parameters-interactivity-deployment/index.qmd
 
 
   page-footer:
     right: "This page is built with 💛 and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, Mine Çetinkaya-Rundel"
+    left: "&copy; Copyright 2024, Mine Çetinkaya-Rundel"
     background: "#7A9857"
 
 format:
