@@ -6,6 +6,3 @@
 /.quarto/
 *.key
 _site/
-
-# remove later
-dashboard/
