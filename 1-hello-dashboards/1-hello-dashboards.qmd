@@ -255,6 +255,30 @@ quarto --version
 ```
 :::
 
+##  {.no-line background-image="images/dashboards/customer-churn.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/dashing-through-snow.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/earthquakes.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/gapminder.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/housing-market.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/labor.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/model-card.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/nfl-injuries.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/retirement.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/shiny-penguins.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/stock-explorer.png" background-size="contain"}
+
 ## Demo: Weather dashboard
 
 ::: r-box
