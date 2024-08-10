@@ -1,0 +1,12 @@
+{
+  "hash": "c540cf02d1e53211f884883d00c0308b",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n::: {#29d931b9 .cell execution_count=1}\n\n::: {.cell-output .cell-output-display}\n![](first-dashboard-py_files/figure-html/cell-2-output-1.png){width=640 height=480}\n:::\n:::\n\n\n",
+    "supporting": [
+      "first-dashboard-py_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

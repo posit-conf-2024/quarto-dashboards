@@ -1,0 +1,17 @@
+{
+  "hash": "3478033f44573be78c270a3bccd29b79",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](first-dashboard-r_files/figure-html/unnamed-chunk-1-1.png){width=768}\n:::\n:::\n",
+    "supporting": [
+      "first-dashboard-r_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

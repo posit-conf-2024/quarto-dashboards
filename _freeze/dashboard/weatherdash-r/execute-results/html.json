@@ -1,0 +1,17 @@
+{
+  "hash": "97983568fb707214bfbee39e6f2e27b1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"How's the weather?\"\nformat: \n  dashboard:\n    nav-buttons: [github]\n    github: https://github.com/posit-conf-2024/quarto-dashboards\nlogo: images/logo.png\ntheme: [sandstone, theme/custom.scss]\nfig-width: 10\nfig-asp: 0.3\nparams:\n  month: \"October\"\n  year: \"2023\"\n  # 2021 rates: https://www.cdc.gov/nchs/data/nvsr/nvsr72/nvsr72-01.pdf\n  us_cesarean_rate: 0.321 \n  us_preterm_rate:  0.1049\n  threshold_diff: 0.02\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(DT)\nlibrary(gt)\ntheme_set(theme_minimal(base_size = 24, base_family = \"Atkinson Hyperlegible\"))\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nweather <- read_csv(\"data/weather.csv\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::knit_exit()\n```\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "supporting": [
+      "weatherdash-r_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
