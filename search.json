@@ -359,42 +359,66 @@
     "href": "2-dashboard-components/index.html",
     "title": "Module two",
     "section": "",
-    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start."
+    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start.",
+    "crumbs": [
+      "Modules",
+      "Module two"
+    ]
   },
   {
     "objectID": "2-dashboard-components/index.html#slides",
     "href": "2-dashboard-components/index.html#slides",
     "title": "Module two",
     "section": "Slides",
-    "text": "Slides\nView slides in full screen"
+    "text": "Slides\nView slides in full screen",
+    "crumbs": [
+      "Modules",
+      "Module two"
+    ]
   },
   {
     "objectID": "2-dashboard-components/index.html#exercises",
     "href": "2-dashboard-components/index.html#exercises",
     "title": "Module two",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted."
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Modules",
+      "Module two"
+    ]
   },
   {
     "objectID": "3-theming-styling/index.html",
     "href": "3-theming-styling/index.html",
     "title": "Module three",
     "section": "",
-    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start."
+    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start.",
+    "crumbs": [
+      "Modules",
+      "Module three"
+    ]
   },
   {
     "objectID": "3-theming-styling/index.html#slides",
     "href": "3-theming-styling/index.html#slides",
     "title": "Module three",
     "section": "Slides",
-    "text": "Slides\nView slides in full screen"
+    "text": "Slides\nView slides in full screen",
+    "crumbs": [
+      "Modules",
+      "Module three"
+    ]
   },
   {
     "objectID": "3-theming-styling/index.html#exercises",
     "href": "3-theming-styling/index.html#exercises",
     "title": "Module three",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted."
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Modules",
+      "Module three"
+    ]
   },
   {
     "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
@@ -513,21 +537,33 @@
     "href": "4-parameters-interactivity-deployment/index.html",
     "title": "Module four",
     "section": "",
-    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start."
+    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start.",
+    "crumbs": [
+      "Modules",
+      "Module four"
+    ]
   },
   {
     "objectID": "4-parameters-interactivity-deployment/index.html#slides",
     "href": "4-parameters-interactivity-deployment/index.html#slides",
     "title": "Module four",
     "section": "Slides",
-    "text": "Slides\nView slides in full screen"
+    "text": "Slides\nView slides in full screen",
+    "crumbs": [
+      "Modules",
+      "Module four"
+    ]
   },
   {
     "objectID": "4-parameters-interactivity-deployment/index.html#exercises",
     "href": "4-parameters-interactivity-deployment/index.html#exercises",
     "title": "Module four",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted."
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Modules",
+      "Module four"
+    ]
   },
   {
     "objectID": "index.html",
@@ -584,20 +620,32 @@
     "href": "1-hello-dashboards/index.html",
     "title": "Module one",
     "section": "",
-    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start."
+    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start.",
+    "crumbs": [
+      "Modules",
+      "Module one"
+    ]
   },
   {
     "objectID": "1-hello-dashboards/index.html#slides",
     "href": "1-hello-dashboards/index.html#slides",
     "title": "Module one",
     "section": "Slides",
-    "text": "Slides\nView slides in full screen"
+    "text": "Slides\nView slides in full screen",
+    "crumbs": [
+      "Modules",
+      "Module one"
+    ]
   },
   {
     "objectID": "1-hello-dashboards/index.html#exercises",
     "href": "1-hello-dashboards/index.html#exercises",
     "title": "Module one",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted."
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Modules",
+      "Module one"
+    ]
   }
 ]
