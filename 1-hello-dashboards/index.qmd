@@ -1,5 +1,5 @@
 ---
-title: "Module one"
+title: "Hello, Dashboards!"
 ---
 
 ::: callout-note
