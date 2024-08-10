@@ -4,10 +4,12 @@ title: "Setup instructions"
 
 Prior to the workshop check you have the required software and set up any accounts you might need for publishing your dashboard.
 
+## Software
+
 You will be able to follow along with this workshop in R or in Python.
 See the required software suite for each language below.
 
-## R
+### R
 
 -   [R](https://cran.r-project.org): 4.4.1
 
@@ -26,7 +28,7 @@ pkg_list <- c(
 install.packages(pkg_list)
 ```
 
-## Python
+### Python
 
 -   [Python](https://www.python.org/downloads/): 3
 
@@ -46,3 +48,24 @@ jupyter==1.0.0
 pandas==2.2.2
 plotnine==0.13.6
 ```
+
+## Publishing accounts
+
+You do not need to publish your dashoard during the workshop, but it would be good pracice!
+
+To publish your website you'll need an account on one of Quarto's publishing venues:
+
+-   **(Recommended)** [Quarto Pub](https://quartopub.com/sign-up)
+-   [GitHub](https://github.com) only **if you are already** a Git/GitHub user
+
+## Discord
+
+We're not going to be making heavy use of Discord during the workshop, but it's a great place to share code snippets for questions that come up or (inevitable) typos that need to be fixed. 
+
+More importantly, it's a great place to connect with other conference attendees.
+
+- [pos.it/conf-event-portal](http://pos.it/conf-event-portal) > Login
+- Click on "Join Discord, the virtual networking platform!"
+- Browse Channels -> #workshop-quarto-dashboards
+
+
