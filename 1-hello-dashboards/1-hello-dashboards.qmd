@@ -1,0 +1,717 @@
+---
+title: "Hello, dashboards!"
+subtitle: "Build-a-Dashboard Workshop"
+author:   
+  - name: Dr. Mine Çetinkaya-Rundel
+    affiliations:
+      - name: Duke University
+      - name: Posit, PBC
+date: "2024-08-12"
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
+format:
+  revealjs:
+    theme: ../style/slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+  echo: true
+---
+
+# Setup instructions
+
+## While you wait for the workshop to begin... {.center}
+
+<br>
+
+Make sure that you've completed the setup steps at
+
+::: {.large .center-align}
+[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24) \> Setup
+:::
+
+# Welcome
+
+## Introductions {.smaller}
+
+::: columns
+::: {.column width="50%"}
+![](images/mine.png){fig-alt="Dr. Mine Cetinkaya-Rundel" fig-align="center" width="200"}
+
+::: {style="text-align: center;"}
+Dr. Mine Çetinkaya-Rundel <br>
+
+Professor, Statistical Science, Duke University <br>
+
+Developer Educator, Posit
+:::
+:::
+
+::: {.column width="50%"}
+![](images/tas.png){fig-alt="Carlos Schedigger, Alex Chisholm, Ron Blum" fig-align="center" width="801"}
+
+::: {style="text-align: center;"}
+Carlos Schedigger,<br>Software Engineer, Posit<br><br> Alex Chisholm,<br>Product Manager, Posit<br><br> Ron Blum,<br>QA Engineer, Posit
+:::
+:::
+:::
+
+## Workshop materials {.nostretch}
+
+::: {style="text-align: center;"}
+One link for all materials
+
+🔗 [pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)
+:::
+
+![](../images/logo.png){fig-alt="Logo for workshop" fig-align="center"}
+
+## Schedule {.smaller}
+
+::: callout-important
+TO DO: Update schedule.
+:::
+
+| Time          | Activity           |
+|:--------------|:-------------------|
+| 09:00 - 10:30 | Hello, dashboards! |
+| 10:30 - 11:00 | *Coffee break*     |
+| 11:00 - 12:30 | Module 2           |
+| 12:30 - 13:30 | *Lunch break*      |
+| 13:30 - 15:00 | Module 3           |
+| 15:00 - 15:30 | *Coffee break*     |
+| 15:30 - 17:00 | Module 4           |
+
+## WiFi
+
+::: larger
+Username: **Posit Conf 2024**
+
+Password: **conf2024**
+:::
+
+<br><br>
+
+::: aside
+If you have any difficulty with your connection please let us (myself and or the TAs) know so we can escalate issues if needed.
+:::
+
+## Code of Conduct
+
+-   The Code of Conduct can be found at <https://posit.co/code-of-conduct>.
+
+-   Please review it carefully.
+    You can report Code of Conduct violations in person, by email, or by phone.
+    Please see the policy linked above for contact information.
+
+## Other useful info
+
+-   There are **gender-neutral bathrooms** located on floors 3, 4, 5, 6, and 7.
+
+-   The **meditation and prayer room** is Room 503.
+    Available Mon & Tues 7am - 7pm, and Wed 7am - 5pm.
+
+-   The **lactation room** is located in 509, same timings as above.
+
+-   Participants who do not wish to be photographed have **red lanyards**; please note everyone’s lanyard colors before taking a photo and respect their choices.
+
+## Asking for help
+
+::: callout-important
+TO DO: Update colors.
+:::
+
+::: r-hstack
+::: {style="text-align: center;"}
+::: {data-id="box1" style="background: #FFC0CB; width: 200px; height: 200px; margin: 25px;"}
+:::
+
+I'm stuck
+:::
+
+::: {style="text-align: center;"}
+::: {data-id="box3" style="background: #39ff14; width: 200px; height: 200px; margin: 25px;"}
+:::
+
+I'm done
+:::
+:::
+
+::: r-hstack
+::: {style="text-align: center;"}
+![](images/hand.png){fig-align="center" width="15%"} <br/>I have a general question
+:::
+:::
+
+## Discord
+
+You should have received an email with an invitation and instructions for joining the conference's discord server.
+
+This workshop has a private channel under Workshops:
+
+::: {.large style="text-align: center"}
+```         
+#workshop-quarto-dashboards
+```
+:::
+
+This is a great place to ask questions, share responses to exercises, post resources, memes, or most anything else before, during, and after the workshop.
+
+# Computational Environment
+
+## Using your own system
+
+If you'd like to use your own system, please see [pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24) \> Setup.
+
+## Posit Cloud
+
+::: callout-important
+TO DO: Get Marko to make a short link.
+:::
+
+You can use the following link to join the workshops Posit Cloud space:
+
+<br>
+
+::: {style="text-align: center;"}
+[pos.it/quarto-dashboards-24-cloud](https://pos.it/quarto-dashboards-24-cloud)
+:::
+
+<br>
+
+Once you have joined, navigate to Contents on the top menu.
+
+## Meeting you where you are
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment .fade-in-then-semi-out}
+I'll **assume** you
+
+-   know some R and/or Python
+
+-   have worked in RStudio and/or VS Code
+
+-   have worked with Quarto
+
+-   want to learn about Quarto Dashboards
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+I'll **teach** you
+
+-   basics of a Quarto Dashboard
+
+-   making your dashboards *dashing*
+
+-   some R and/or Python tips along the way
+:::
+:::
+:::
+
+## Checking in one more time
+
+<br>
+
+Have you completed the following?
+
+::: {.large .center-align}
+[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24) \> Setup
+:::
+
+##  {.center}
+
+::: {.hand-green-large style="text-align: center;"}
+Let's get started!
+:::
+
+# Hello, Dashboards!
+
+## Quarto
+
+-   is a (relatively) new, open-source, scientific, and technical publishing system
+-   aims to make the process of creating and collaborating dramatically better
+
+## Quarto ➝ many outputs {background-image="images/quarto-to-docs.png"}
+
+With Quarto you can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, and more...
+
+## Quarto ➝ dashboards {background-image="images/quarto-to-dashboard.png"}
+
+Since Quarto 1.4!
+
+## Quarto version
+
+::: callout-tip
+Run the following in your Terminal to find your Quarto version:
+
+``` {.bash filename="Terminal"}
+quarto --version
+```
+:::
+
+## Demo: Weather dashboard
+
+::: r-box
+<https://mine.quarto.pub/weatherdash-r>
+:::
+
+::: python-box
+<https://mine.quarto.pub/weatherdash-py>
+:::
+
+Code: <https://github.com/posit-conf-2024/weatherdash>
+
+## Notebook ➝ Dashboard
+
+::: r-box
+``` {.markdown filename="weatherdash-r.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
+---
+title: "The Weather Dashboard"
+format: dashboard
+---
+
+# notebook content goes here...
+```
+:::
+
+::: python-box
+``` {.markdown filename="weatherdash-py.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
+---
+title: "The Weather Dashboard"
+format: dashboard
+---
+
+# notebook content goes here...
+```
+:::
+
+# Dashboard basics
+
+## Cards {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+Dashboards are composed of **cards**.
+
+::: r-hstack
+::: {data-id="box1" auto-animate-delay="0" style="background: #72994E; width: 200px; height: 150px; margin: 10px; border: 3px solid #57733D;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #F2F2F2; width: 200px; height: 150px; margin: 10px; border: 3px solid #C2C2C4;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #419599; width: 200px; height: 150px; margin: 10px; border: 3px solid #297075;"}
+:::
+:::
+
+## Rows and columns {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+Cards are arranged into **rows** and **columns**.
+
+::: r-stack
+::: {data-id="box1" auto-animate-delay="0" style="background: #72994E; width: 235px; height: 145px; margin-top: 30px; position: absolute; left: 275px; border: 3px solid #57733D;"}
+:::
+
+::: {data-id="box2" style="background: #F2F2F2; width: 235px; height: 145px; margin-top: 30px; position: absolute; right: 275px; border: 3px solid #C2C2C4;"}
+:::
+
+::: {data-id="box3" style="background: #419599; width: 500px; height: 300px; margin-top: 200px; border: 3px solid #297075;"}
+:::
+:::
+
+## Layouts {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+**Pages**, **tabsets**, and **sidebars** allow for more advanced layouts.
+
+::: r-stack
+::: {data-id="box1" auto-animate-delay="0" style="background: #72994E; width: 235px; height: 145px; margin-top: 30px; position: absolute; left: 275px; border: 3px solid #57733D;"}
+:::
+
+::: {data-id="box2" style="background: #F2F2F2; width: 235px; height: 145px; margin-top: 30px; position: absolute; right: 275px; border: 3px solid #C2C2C4;"}
+:::
+
+::: {data-id="box3" style="background: #419599; width: 500px; height: 300px; margin-top: 200px; border: 3px solid #297075;"}
+:::
+
+::: {data-id="box4" auto-animate-delay="0" style="background: #DFB33E; width: 150px; height: 470px; margin-top: 30px; position: absolute; right: 800px; border: 3px solid #9a771a;"}
+:::
+:::
+
+:::
+
+## Step-by-step
+
+Let's make a dashboard, step-by-step
+
+-   First with R
+
+-   Then with Python
+
+# First dashboard in R
+
+## Step 1: `format: dashboard` {auto-animate="true"}
+
+``` {.yaml filename="dashboard-r.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+```
+
+## Step 2: Add a card {auto-animate="true"}
+
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|10-13"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+````
+
+## Step 2: Add a card {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+```` {.yaml filename="dashboard-r.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+````
+:::
+
+::: {.column width="60%"}
+![](images/first-dashboard-r-1.png)
+:::
+:::
+
+## Step 3: Add another card {auto-animate="true"}
+
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|15-18"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+```{{r}}
+ggplot(mpg, aes(x = drv)) +
+  geom_bar()
+```
+````
+
+## Step 3: Add another card {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+```` {.yaml filename="dashboard-r.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+```{{r}}
+ggplot(mpg, aes(x = drv)) +
+  geom_bar()
+```
+````
+:::
+
+::: {.column width="60%"}
+![](images/first-dashboard-r-2.png)
+:::
+:::
+
+## Step 4: Add titles to cards {auto-animate="true"}
+
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|11,17"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+#| title: Highway vs. city mileage
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+```{{r}}
+#| title: Drive types
+ggplot(mpg, aes(x = drv)) +
+  geom_bar()
+```
+````
+
+## Step 4: Add titles to cards {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+```` {.yaml filename="dashboard-r.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+#| title: Highway vs. city mileage
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+```{{r}}
+#| title: Drive types
+ggplot(mpg, aes(x = drv)) +
+  geom_bar()
+```
+````
+:::
+
+::: {.column width="60%"}
+![](images/first-dashboard-r-3.png)
+:::
+:::
+
+## Steps 1 - 4 {auto-animate="true"}
+
+![](images/first-dashboard-r-3.png){fig-align="center"}
+
+# First dashboard in Python
+
+## Step 1: `format: dashboard` {auto-animate="true"}
+
+``` {.yaml filename="dashboard-py.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+```
+
+## Step 2: Add a card {auto-animate="true"}
+
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|10-16"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{python}}
+from plotnine import ggplot, geom_point, aes
+from plotnine.data import mpg
+```
+
+```{{python}}
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
+```
+````
+
+## Step 2: Add a card {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+```` {.yaml filename="dashboard-py.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{python}}
+from plotnine import ggplot, geom_point, aes
+from plotnine.data import mpg
+```
+
+```{{python}}
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
+```
+````
+:::
+
+::: {.column width="60%"}
+![](images/first-dashboard-py-1.png)
+:::
+:::
+
+## Step 3: Add another card {auto-animate="true"}
+
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|18-23"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{python}}
+from plotnine import ggplot, geom_point, aes
+from plotnine.data import mpg
+```
+
+```{{python}}
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
+```
+
+```{{python}}
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
+```
+````
+
+## Step 3: Add another card {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+```` {.yaml filename="dashboard-py.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{python}}
+from plotnine import ggplot, geom_point, aes
+from plotnine.data import mpg
+```
+
+```{{python}}
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
+```
+
+```{{python}}
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
+```
+````
+:::
+
+::: {.column width="60%"}
+![](images/first-dashboard-py-2.png)
+:::
+:::
+
+## Step 4: Add titles to cards {auto-animate="true"}
+
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|12,20"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{python}}
+from plotnine import ggplot, geom_point, aes
+from plotnine.data import mpg
+```
+
+```{{python}}
+#| title: Highway vs. city mileage
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
+```
+
+```{{python}}
+#| title: Drive types
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
+```
+````
+
+## Step 4: Add titles to cards {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+```` {.yaml filename="dashboard-py.qmd"}
+---
+title: "My first Quarto dashboard"
+format: dashboard
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+#| title: Highway vs. city mileage
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+```{{r}}
+#| title: Drive types
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
+```
+````
+:::
+
+::: {.column width="60%"}
+![](images/first-dashboard-py-3.png)
+:::
+:::
+
+## Steps 1 - 4 {auto-animate="true"}
+
+![](images/first-dashboard-py-3.png){fig-align="center"}
