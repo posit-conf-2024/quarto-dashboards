@@ -12,7 +12,7 @@
 
   <meta name="author" content="Dr.&nbsp;Mine Çetinkaya-Rundel">
   <meta name="dcterms.date" content="2024-08-12">
-  <title>Build-a-Dashboard Workshop – Module one</title>
+  <title>Build-a-Dashboard Workshop – Dashboard components</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,6 +30,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -323,7 +388,7 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Module one – Build-a-Dashboard Workshop">
+<meta property="og:title" content="Dashboard components – Build-a-Dashboard Workshop">
 <meta property="og:description" content="Build-a-Dashboard Workshop">
 <meta property="og:site_name" content="Build-a-Dashboard Workshop">
 </head>
@@ -332,7 +397,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Module one</h1>
+  <h1 class="title">Dashboard components</h1>
   <p class="subtitle">Build-a-Dashboard Workshop</p>
 
 <div class="quarto-title-authors">
@@ -351,16 +416,332 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 
   <p class="date">2024-08-12</p>
 </section>
-<section class="slide level2">
+<section>
+<section id="dashboard-components" class="title-slide slide level1 center">
+<h1>Dashboard components</h1>
 
+</section>
+<section id="navigation-bar-and-pages" class="slide level2">
+<h2>Navigation bar and pages</h2>
+<p>Icon, title, and author along with links to sub-pages if more than one page is defined.</p>
 
-<div class="quarto-auto-generated-content">
-<p><img src="../images/logo.png" class="slide-logo"></p>
-<div class="footer footer-default">
-<p>https://pos.it/quarto-dashboards-24</p>
-</div>
+<img data-src="images/navbar-pages.png" class="r-stretch"></section>
+<section id="sidebars-rows-columns-and-tabsets" class="slide level2">
+<h2>Sidebars, rows, columns, and tabsets</h2>
+<p>Rows and columns using markdown heading, with optional attributes to control height, width, etc. Sidebars, mostly used for for interactive inputs. Tabsets to further divide content.</p>
+
+<img data-src="images/sidebar-rows-columns-tabsets.png" class="r-stretch"></section>
+<section id="cards" class="slide level2">
+<h2>Cards</h2>
+<p>Cards are containers for code cell outputs (e.g., plots, tables, value boxes) and free form markdown text. The content of cards typically maps to <em>cells</em> in your notebook or source document.</p>
+
+<img data-src="images/cards.png" class="r-stretch"></section>
+<section id="navigation-bar-and-pages-1" class="slide level2">
+<h2>Navigation bar and pages</h2>
+
+<img data-src="images/navigation-toolbar.png" class="r-stretch"><div style="margin-top: 0.7em;">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="op">---</span> </span>
+<span id="cb1-2"><a></a>title: <span class="st">"Palmer Penguins"</span></span>
+<span id="cb1-3"><a></a>author: <span class="st">"Cobblepot Analytics"</span></span>
+<span id="cb1-4"><a></a><span class="bu">format</span>: </span>
+<span id="cb1-5"><a></a>  dashboard:</span>
+<span id="cb1-6"><a></a>    logo: images<span class="op">/</span>penguins.png</span>
+<span id="cb1-7"><a></a>    nav<span class="op">-</span>buttons: [linkedin, twitter, github]</span>
+<span id="cb1-8"><a></a><span class="op">---</span></span>
+<span id="cb1-9"><a></a></span>
+<span id="cb1-10"><a></a><span class="co"># Bills</span></span>
+<span id="cb1-11"><a></a></span>
+<span id="cb1-12"><a></a><span class="co"># Flippers</span></span>
+<span id="cb1-13"><a></a></span>
+<span id="cb1-14"><a></a><span class="co"># Data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
+<section id="sidebars-page-level" class="slide level2 component-slide">
+<h2>Sidebars: Page Level</h2>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb2" style="margin-top: 45px;"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="op">---</span></span>
+<span id="cb2-2"><a></a>title: <span class="st">"Sidebar"</span></span>
+<span id="cb2-3"><a></a><span class="bu">format</span>: dashboard</span>
+<span id="cb2-4"><a></a><span class="op">---</span></span>
+<span id="cb2-5"><a></a>    </span>
+<span id="cb2-6"><a></a><span class="co"># Page 1</span></span>
+<span id="cb2-7"><a></a></span>
+<span id="cb2-8"><a></a><span class="co">## {.sidebar}</span></span>
+<span id="cb2-9"><a></a></span>
+<span id="cb2-10"><a></a>```{python}</span>
+<span id="cb2-11"><a></a>```</span>
+<span id="cb2-12"><a></a></span>
+<span id="cb2-13"><a></a><span class="co">## Column </span></span>
+<span id="cb2-14"><a></a></span>
+<span id="cb2-15"><a></a>```{python}</span>
+<span id="cb2-16"><a></a>```</span>
+<span id="cb2-17"><a></a></span>
+<span id="cb2-18"><a></a>```{python}</span>
+<span id="cb2-19"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/chart-input-sidebar.png"></p>
+</div></div>
+</section>
+<section id="sidebars-global" class="slide level2 compontent-slide">
+<h2>Sidebars: Global</h2>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb3" style="margin-top: 45px;"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="op">---</span></span>
+<span id="cb3-2"><a></a>title: <span class="st">"Global Sidebar"</span></span>
+<span id="cb3-3"><a></a><span class="bu">format</span>: dashboard</span>
+<span id="cb3-4"><a></a><span class="op">---</span></span>
+<span id="cb3-5"><a></a>    </span>
+<span id="cb3-6"><a></a><span class="co"># {.sidebar}</span></span>
+<span id="cb3-7"><a></a></span>
+<span id="cb3-8"><a></a>Sidebar content (e.g. inputs)</span>
+<span id="cb3-9"><a></a></span>
+<span id="cb3-10"><a></a><span class="co"># Plot</span></span>
+<span id="cb3-11"><a></a></span>
+<span id="cb3-12"><a></a>```{python}</span>
+<span id="cb3-13"><a></a>```</span>
+<span id="cb3-14"><a></a></span>
+<span id="cb3-15"><a></a><span class="co"># Data</span></span>
+<span id="cb3-16"><a></a></span>
+<span id="cb3-17"><a></a>```{python}</span>
+<span id="cb3-18"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/global-sidebar.png" style="width:80.0%"></p>
+</div></div>
+</section>
+<section id="layout-rows" class="slide level2 component-slide">
+<h2>Layout: Rows</h2>
+<div class="columns">
+<div class="column" style="margin-top: 65px;">
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="op">---</span></span>
+<span id="cb4-2"><a></a>title: <span class="st">"Focal (Top)"</span></span>
+<span id="cb4-3"><a></a><span class="bu">format</span>: dashboard</span>
+<span id="cb4-4"><a></a><span class="op">---</span></span>
+<span id="cb4-5"><a></a>    </span>
+<span id="cb4-6"><a></a><span class="co">## Row {height=70%}</span></span>
+<span id="cb4-7"><a></a></span>
+<span id="cb4-8"><a></a>```{python}</span>
+<span id="cb4-9"><a></a>```</span>
+<span id="cb4-10"><a></a></span>
+<span id="cb4-11"><a></a><span class="co">## Row {height=30%}</span></span>
+<span id="cb4-12"><a></a></span>
+<span id="cb4-13"><a></a>```{python}</span>
+<span id="cb4-14"><a></a>```</span>
+<span id="cb4-15"><a></a></span>
+<span id="cb4-16"><a></a>```{python}</span>
+<span id="cb4-17"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/chart-focal-top.png" style="width:90.0%"></p>
+</div></div>
+</section>
+<section id="section" class="slide level2 no-line" data-background-image="images/dashboards/customer-churn.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="layout-columns" class="slide level2 component-slide">
+<h2>Layout: Columns</h2>
+<div class="columns">
+<div class="column" style="margin-top: 40px;">
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="op">---</span></span>
+<span id="cb5-2"><a></a>title: <span class="st">"Focal (Top)"</span></span>
+<span id="cb5-3"><a></a><span class="bu">format</span>: </span>
+<span id="cb5-4"><a></a>  dashboard:</span>
+<span id="cb5-5"><a></a>    orientation: columns</span>
+<span id="cb5-6"><a></a><span class="op">---</span></span>
+<span id="cb5-7"><a></a>    </span>
+<span id="cb5-8"><a></a><span class="co">## Column {width=60%}</span></span>
+<span id="cb5-9"><a></a></span>
+<span id="cb5-10"><a></a>```{python}</span>
+<span id="cb5-11"><a></a>```</span>
+<span id="cb5-12"><a></a></span>
+<span id="cb5-13"><a></a><span class="co">## Column {width=40%}</span></span>
+<span id="cb5-14"><a></a></span>
+<span id="cb5-15"><a></a>```{python}</span>
+<span id="cb5-16"><a></a>```</span>
+<span id="cb5-17"><a></a></span>
+<span id="cb5-18"><a></a>```{python}</span>
+<span id="cb5-19"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/chart-focal-left.png"></p>
+</div></div>
+</section>
+<section id="section-1" class="slide level2 no-line" data-background-image="images/dashboards/housing-market.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="tabsets" class="slide level2 component-slide">
+<h2>Tabsets</h2>
+<div class="columns">
+<div class="column" style="margin-top: 45px;">
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="op">---</span></span>
+<span id="cb6-2"><a></a>title: <span class="st">"Palmer Penguins"</span></span>
+<span id="cb6-3"><a></a><span class="bu">format</span>: dashboard</span>
+<span id="cb6-4"><a></a><span class="op">---</span></span>
+<span id="cb6-5"><a></a>    </span>
+<span id="cb6-6"><a></a><span class="co">## Row</span></span>
+<span id="cb6-7"><a></a></span>
+<span id="cb6-8"><a></a>```{python}</span>
+<span id="cb6-9"><a></a>```</span>
+<span id="cb6-10"><a></a></span>
+<span id="cb6-11"><a></a><span class="co">## Row {.tabset}</span></span>
+<span id="cb6-12"><a></a></span>
+<span id="cb6-13"><a></a>```{python}</span>
+<span id="cb6-14"><a></a><span class="co">#| title: Chart 2</span></span>
+<span id="cb6-15"><a></a>```</span>
+<span id="cb6-16"><a></a></span>
+<span id="cb6-17"><a></a>```{python}</span>
+<span id="cb6-18"><a></a><span class="co">#| title: Chart 3</span></span>
+<span id="cb6-19"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/chart-tabset-row.png" style="width:87.0%"></p>
+</div></div>
+</section>
+<section id="section-2" class="slide level2 no-line" data-background-image="images/dashboards/mynorfolk.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="plots" class="slide level2 component-slide">
+<h2>Plots</h2>
+<div class="columns">
+<div class="column fragment smaller">
+<p><a href="https://plotly.com/python/">plotly</a></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>```{python}</span>
+<span id="cb7-2"><a></a><span class="co">#| title: GDP and Life Expectancy</span></span>
+<span id="cb7-3"><a></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb7-4"><a></a>df <span class="op">=</span> px.data.gapminder()</span>
+<span id="cb7-5"><a></a>px.scatter(</span>
+<span id="cb7-6"><a></a>  df, x<span class="op">=</span><span class="st">"gdpPercap"</span>, y<span class="op">=</span><span class="st">"lifeExp"</span>, </span>
+<span id="cb7-7"><a></a>  animation_frame<span class="op">=</span><span class="st">"year"</span>, animation_group<span class="op">=</span><span class="st">"country"</span>,</span>
+<span id="cb7-8"><a></a>  size<span class="op">=</span><span class="st">"pop"</span>, color<span class="op">=</span><span class="st">"continent"</span>, hover_name<span class="op">=</span><span class="st">"country"</span>, </span>
+<span id="cb7-9"><a></a>  facet_col<span class="op">=</span><span class="st">"continent"</span>, log_x<span class="op">=</span><span class="va">True</span>, size_max<span class="op">=</span><span class="dv">45</span>, </span>
+<span id="cb7-10"><a></a>  range_x<span class="op">=</span>[<span class="dv">100</span>,<span class="dv">100000</span>], range_y<span class="op">=</span>[<span class="dv">25</span>,<span class="dv">90</span>]</span>
+<span id="cb7-11"><a></a>)</span>
+<span id="cb7-12"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/plotly-interactive.png" style="width:85.0%"></p>
+</div></div>
+<div class="columns">
+<div class="column fragment smaller">
+<p><a href="https://ipyleaflet.readthedocs.io">ipyleaflet</a></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>```{python}</span>
+<span id="cb8-2"><a></a><span class="co">#| title: "World Map"</span></span>
+<span id="cb8-3"><a></a><span class="co">#| padding: 0px</span></span>
+<span id="cb8-4"><a></a><span class="im">from</span> ipyleaflet <span class="im">import</span> Map, basemaps, basemap_to_tiles</span>
+<span id="cb8-5"><a></a>Map(basemap<span class="op">=</span>basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),</span>
+<span id="cb8-6"><a></a>    center<span class="op">=</span>(<span class="fl">48.204793</span>, <span class="fl">350.121558</span>), zoom<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb8-7"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/leaflet-card-title-padding.png" style="width:85.0%"></p>
+</div></div>
+</section>
+<section id="component-tables" class="slide level2 component-slide">
+<h2>Tables</h2>
+<div class="columns">
+<div class="column fragment">
+<p><a href="https://pypi.org/project/tabulate/">tabulate</a></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a>```{python}</span>
+<span id="cb9-2"><a></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
+<span id="cb9-3"><a></a><span class="im">from</span> IPython.display <span class="im">import</span> Markdown</span>
+<span id="cb9-4"><a></a>Markdown(tabulate(penguins, showindex<span class="op">=</span><span class="va">False</span>)}</span>
+<span id="cb9-5"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/tabulate.png"></p>
+</div></div>
+<div class="columns">
+<div class="column fragment">
+<p><a href="https://pypi.org/project/itables/">itables</a></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>```{python}</span>
+<span id="cb10-2"><a></a><span class="im">from</span> itables <span class="im">import</span> show</span>
+<span id="cb10-3"><a></a>show(penguins)</span>
+<span id="cb10-4"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment">
+<p><img data-src="images/itables-scrolling.png"></p>
+</div></div>
+<style type="text/css">
+.component-slide .column > p {
+  margin-top: 0;
+}
+.component-slide .column > p > img {
+  margin-top: -8px;
+}
+#component-tables .column > div.sourceCode {
+  margin-top: 30px;
+}
+</style>
+</section>
+<section id="value-box-component" class="slide level2 component-slide">
+<h2>Value Boxes</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="sourceCode" id="cb11" style="margin-top: 45px;" data-code-line-numbers="|3-9|14-17|"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="co">## Row</span></span>
+<span id="cb11-2"><a></a></span>
+<span id="cb11-3"><a></a>```{python}</span>
+<span id="cb11-4"><a></a><span class="co">#| component: valuebox</span></span>
+<span id="cb11-5"><a></a><span class="co">#| title: "Current Price"</span></span>
+<span id="cb11-6"><a></a><span class="bu">dict</span>(icon <span class="op">=</span> <span class="st">"currency-dollar"</span>,</span>
+<span id="cb11-7"><a></a>     color <span class="op">=</span> <span class="st">"secondary"</span>,</span>
+<span id="cb11-8"><a></a>     value <span class="op">=</span> get_price(data))</span>
+<span id="cb11-9"><a></a>```</span>
+<span id="cb11-10"><a></a></span>
+<span id="cb11-11"><a></a>```{python}</span>
+<span id="cb11-12"><a></a><span class="co">#| component: valuebox</span></span>
+<span id="cb11-13"><a></a><span class="co">#| title: "Change"</span></span>
+<span id="cb11-14"><a></a>change <span class="op">=</span> get_change(data)</span>
+<span id="cb11-15"><a></a><span class="bu">dict</span>(value <span class="op">=</span> change[<span class="st">'amount'</span>],</span>
+<span id="cb11-16"><a></a>     icon <span class="op">=</span> change[<span class="st">'icon'</span>],</span>
+<span id="cb11-17"><a></a>     color <span class="op">=</span> change[<span class="st">'color'</span>]) </span>
+<span id="cb11-18"><a></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:55%;">
+<p><img data-src="images/value-box-app.png" class="border" style="width:80.0%"></p>
+</div></div>
+<style type="text/css">
+#value-box-component pre.sourceCode code {
+  max-height: 750px;
+}
+</style>
+</section>
+<section id="text-content" class="slide level2 component-slide">
+<h2>Text Content</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="sourceCode" id="cb12" data-code-line-numbers="|17-22|"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="co">## Column</span></span>
+<span id="cb12-2"><a></a></span>
+<span id="cb12-3"><a></a>```{python}</span>
+<span id="cb12-4"><a></a><span class="co">#| title: Population</span></span>
+<span id="cb12-5"><a></a>px.area(df, x<span class="op">=</span><span class="st">"year"</span>, y<span class="op">=</span><span class="st">"pop"</span>, </span>
+<span id="cb12-6"><a></a>        color<span class="op">=</span><span class="st">"continent"</span>, </span>
+<span id="cb12-7"><a></a>        line_group<span class="op">=</span><span class="st">"country"</span>)</span>
+<span id="cb12-8"><a></a>```</span>
+<span id="cb12-9"><a></a></span>
+<span id="cb12-10"><a></a>```{python}</span>
+<span id="cb12-11"><a></a><span class="co">#| title: Life Expectancy</span></span>
+<span id="cb12-12"><a></a>px.line(df, x<span class="op">=</span><span class="st">"year"</span>, y<span class="op">=</span><span class="st">"lifeExp"</span>, </span>
+<span id="cb12-13"><a></a>        color<span class="op">=</span><span class="st">"continent"</span>, </span>
+<span id="cb12-14"><a></a>        line_group<span class="op">=</span><span class="st">"country"</span>)</span>
+<span id="cb12-15"><a></a>```</span>
+<span id="cb12-16"><a></a></span>
+<span id="cb12-17"><a></a>::: {.card}</span>
+<span id="cb12-18"><a></a>Gapminder combines data <span class="im">from</span> multiple sources</span>
+<span id="cb12-19"><a></a>into unique coherent time<span class="op">-</span>series that can’t be</span>
+<span id="cb12-20"><a></a>found elsewhere. Learn more about the Gampminder</span>
+<span id="cb12-21"><a></a>dataset at <span class="op">&lt;</span>https:<span class="op">//</span>www.gapminder.org<span class="op">/</span>data<span class="op">/&gt;</span>.</span>
+<span id="cb12-22"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:45%;">
+<p><img data-src="images/text-content-column.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="expanding-cards" class="slide level2">
+<h2>Expanding Cards</h2>
+<p>Cards provide an <strong>Expand</strong> button which appears at bottom right on hover:</p>
+
+<img data-src="images/expanding-cards.png" class="r-stretch"></section>
+<section id="section-3" class="slide level2 no-line" data-background-image="images/expanding-cards-expanded.png" data-background-size="contain">
+<h2></h2>
+
+<div class="quarto-auto-generated-content">
+<p><img src="../images/slides-logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><a href="https://pos.it/quarto-dashboards-24">pos.it/quarto-dashboards-24</a></p>
+</div>
+</div>
+</section></section>
     </div>
   </div>
 

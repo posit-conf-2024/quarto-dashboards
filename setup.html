@@ -63,7 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-module-one/index.html" rel="next">
+<link href="./1-module-one/index.qmd" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -172,24 +172,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-module-one/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module one</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2-module-two/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module two</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3-module-three/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module three</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./4-module-four/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module four</span></a>
   </div>
@@ -206,8 +188,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r" id="toc-r" class="nav-link active" data-scroll-target="#r">R</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link active" data-scroll-target="#software">Software</a>
+  <ul class="collapse">
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
   <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  </ul></li>
+  <li><a href="#publishing-accounts" id="toc-publishing-accounts" class="nav-link" data-scroll-target="#publishing-accounts">Publishing accounts</a></li>
+  <li><a href="#discord" id="toc-discord" class="nav-link" data-scroll-target="#discord">Discord</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/edit/main/setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/posit-conf-2024/quarto-dashboards/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -234,9 +221,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Prior to the workshop check you have the required software and set up any accounts you might need for publishing your dashboard.</p>
+<section id="software" class="level2">
+<h2 class="anchored" data-anchor-id="software">Software</h2>
 <p>You will be able to follow along with this workshop in R or in Python. See the required software suite for each language below.</p>
-<section id="r" class="level2">
-<h2 class="anchored" data-anchor-id="r">R</h2>
+<section id="r" class="level3">
+<h3 class="anchored" data-anchor-id="r">R</h3>
 <ul>
 <li><p><a href="https://cran.r-project.org">R</a>: 4.4.1</p></li>
 <li><p><a href="https://quarto.org/docs/download/">Quarto</a>: v1.5</p></li>
@@ -250,8 +239,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pkg_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="python" class="level2">
-<h2 class="anchored" data-anchor-id="python">Python</h2>
+<section id="python" class="level3">
+<h3 class="anchored" data-anchor-id="python">Python</h3>
 <ul>
 <li><a href="https://www.python.org/downloads/">Python</a>: 3</li>
 </ul>
@@ -266,6 +255,26 @@ ipykernel==6.29.5
 jupyter==1.0.0
 pandas==2.2.2
 plotnine==0.13.6</code></pre>
+</section>
+</section>
+<section id="publishing-accounts" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-accounts">Publishing accounts</h2>
+<p>You do not need to publish your dashoard during the workshop, but it would be good pracice!</p>
+<p>To publish your website you’ll need an account on one of Quarto’s publishing venues:</p>
+<ul>
+<li><strong>(Recommended)</strong> <a href="https://quartopub.com/sign-up">Quarto Pub</a></li>
+<li><a href="https://github.com">GitHub</a> only <strong>if you are already</strong> a Git/GitHub user</li>
+</ul>
+</section>
+<section id="discord" class="level2">
+<h2 class="anchored" data-anchor-id="discord">Discord</h2>
+<p>We’re not going to be making heavy use of Discord during the workshop, but it’s a great place to share code snippets for questions that come up or (inevitable) typos that need to be fixed.</p>
+<p>More importantly, it’s a great place to connect with other conference attendees.</p>
+<ul>
+<li><a href="http://pos.it/conf-event-portal">pos.it/conf-event-portal</a> &gt; Login</li>
+<li>Click on “Join Discord, the virtual networking platform!”</li>
+<li>Browse Channels -&gt; #workshop-quarto-dashboards</li>
+</ul>
 
 
 </section>
@@ -842,8 +851,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-module-one/index.html" class="pagination-link" aria-label="Module one">
-        <span class="nav-page-text">Module one</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./1-module-one/index.qmd" class="pagination-link" aria-label="">
+        <span class="nav-page-text"></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
