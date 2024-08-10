@@ -8,10 +8,10 @@ Materials for this module to be updated before the workshop start.
 
 ## Slides
 
-[View slides in full screen](2-module-two.html)
+[View slides in full screen](2-dashboard-components.html)
 
 ```{=html}
-<iframe class="slide-deck" src="2-module-two.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src="2-dashboard-components.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 ## Exercises
 
