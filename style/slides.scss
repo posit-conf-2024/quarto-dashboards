@@ -97,3 +97,22 @@ details>summary {
   border-left: solid 5px #589398;
   background-color: #58939850;
 }
+
+.reveal .slide .r-box {
+  padding: 0.5em 1em 0.5em 1em;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px #3767B6;
+  background: #BBBDC050 5px center/3em no-repeat;
+  background-position: 0.5em 1.5em;
+}
+
+.reveal .slide .python-box {
+  padding: 0.5em 1em 0.5em 1em;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px #5482B0;
+  background: #FADF6F50 5px center/3em no-repeat;
+  background-image: url("images/python-logo.png");
+  background-position: 0.5em 1.5em;
+}
