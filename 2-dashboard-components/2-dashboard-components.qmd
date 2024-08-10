@@ -1,0 +1,411 @@
+---
+title: "Dashboard components"
+subtitle: "Build-a-Dashboard Workshop"
+author:   
+  - name: Dr. Mine Çetinkaya-Rundel
+    affiliations:
+      - name: Duke University
+      - name: Posit, PBC
+date: "2024-08-12"
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
+format:
+  revealjs:
+    theme: ../style/slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+  echo: true
+---
+
+# Dashboard components
+
+## Navigation bar and pages
+
+Icon, title, and author along with links to sub-pages if more than one page is defined.
+
+![](images/navbar-pages.png)
+
+## Sidebars, rows, columns, and tabsets
+
+Rows and columns using markdown heading, with optional attributes to control height, width, etc.
+Sidebars, mostly used for for interactive inputs.
+Tabsets to further divide content.
+
+![](images/sidebar-rows-columns-tabsets.png)
+
+## Cards
+
+Cards are containers for code cell outputs (e.g., plots, tables, value boxes) and free form markdown text.
+The content of cards typically maps to *cells* in your notebook or source document.
+
+![](images/cards.png)
+
+## Navigation bar and pages
+
+![](images/navigation-toolbar.png)
+
+::: {style="margin-top: 0.7em;"}
+``` {.python .pymd}
+--- 
+title: "Palmer Penguins"
+author: "Cobblepot Analytics"
+format: 
+  dashboard:
+    logo: images/penguins.png
+    nav-buttons: [linkedin, twitter, github]
+---
+
+# Bills
+
+# Flippers
+
+# Data
+```
+:::
+
+## Sidebars: Page Level {.component-slide}
+
+::: columns
+::: column
+```` {.python .pymd style="margin-top: 45px;"}
+---
+title: "Sidebar"
+format: dashboard
+---
+    
+# Page 1
+
+## {.sidebar}
+
+```{{python}}
+```
+
+## Column 
+
+```{{python}}
+```
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-input-sidebar.png)
+:::
+:::
+
+## Sidebars: Global {.compontent-slide}
+
+::: columns
+::: column
+```` {.python .pymd style="margin-top: 45px;"}
+---
+title: "Global Sidebar"
+format: dashboard
+---
+    
+# {.sidebar}
+
+Sidebar content (e.g. inputs)
+
+# Plot
+
+```{{python}}
+```
+
+# Data
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/global-sidebar.png){width="80%"}
+:::
+:::
+
+## Layout: Rows {.component-slide}
+
+::: columns
+::: {.column style="margin-top: 65px;"}
+```` {.python .pymd}
+---
+title: "Focal (Top)"
+format: dashboard
+---
+    
+## Row {height=70%}
+
+```{{python}}
+```
+
+## Row {height=30%}
+
+```{{python}}
+```
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-focal-top.png){width="90%"}
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/customer-churn.png" background-size="contain"}
+
+## Layout: Columns {.component-slide}
+
+::: columns
+::: {.column style="margin-top: 40px;"}
+```` {.python .pymd}
+---
+title: "Focal (Top)"
+format: 
+  dashboard:
+    orientation: columns
+---
+    
+## Column {width=60%}
+
+```{{python}}
+```
+
+## Column {width=40%}
+
+```{{python}}
+```
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-focal-left.png)
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/housing-market.png" background-size="contain"}
+
+## Tabsets {.component-slide}
+
+::: columns
+::: {.column style="margin-top: 45px;"}
+```` {.python .pymd}
+---
+title: "Palmer Penguins"
+format: dashboard
+---
+    
+## Row
+
+```{{python}}
+```
+
+## Row {.tabset}
+
+```{{python}}
+#| title: Chart 2
+```
+
+```{{python}}
+#| title: Chart 3
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-tabset-row.png){width="87%"}
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
+
+## Plots {.component-slide}
+
+::: columns
+::: {.column .fragment .smaller}
+[plotly](https://plotly.com/python/)
+
+```` python
+```{{python}}
+#| title: GDP and Life Expectancy
+import plotly.express as px
+df = px.data.gapminder()
+px.scatter(
+  df, x="gdpPercap", y="lifeExp", 
+  animation_frame="year", animation_group="country",
+  size="pop", color="continent", hover_name="country", 
+  facet_col="continent", log_x=True, size_max=45, 
+  range_x=[100,100000], range_y=[25,90]
+)
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/plotly-interactive.png){width="85%"}
+:::
+:::
+
+::: columns
+::: {.column .fragment .smaller}
+[ipyleaflet](https://ipyleaflet.readthedocs.io)
+
+```` python
+```{{python}}
+#| title: "World Map"
+#| padding: 0px
+from ipyleaflet import Map, basemaps, basemap_to_tiles
+Map(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),
+    center=(48.204793, 350.121558), zoom=2)
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/leaflet-card-title-padding.png){width="85%"}
+:::
+:::
+
+## Tables {#component-tables .component-slide}
+
+::: columns
+::: {.column .fragment}
+[tabulate](https://pypi.org/project/tabulate/)
+
+```` python
+```{{python}}
+from tabulate import tabulate
+from IPython.display import Markdown
+Markdown(tabulate(penguins, showindex=False)}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/tabulate.png)
+:::
+:::
+
+::: columns
+::: {.column .fragment}
+[itables](https://pypi.org/project/itables/)
+
+```` python
+```{{python}}
+from itables import show
+show(penguins)
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/itables-scrolling.png)
+:::
+:::
+
+```{=html}
+<style type="text/css">
+.component-slide .column > p {
+  margin-top: 0;
+}
+.component-slide .column > p > img {
+  margin-top: -8px;
+}
+#component-tables .column > div.sourceCode {
+  margin-top: 30px;
+}
+</style>
+```
+## Value Boxes {#value-box-component .component-slide}
+
+::: columns
+::: {.column width="45%"}
+```` {.python .pymd style="margin-top: 45px;" code-line-numbers="|3-9|14-17|"}
+## Row
+
+```{{python}}
+#| component: valuebox
+#| title: "Current Price"
+dict(icon = "currency-dollar",
+     color = "secondary",
+     value = get_price(data))
+```
+
+```{{python}}
+#| component: valuebox
+#| title: "Change"
+change = get_change(data)
+dict(value = change['amount'],
+     icon = change['icon'],
+     color = change['color']) 
+```
+````
+:::
+
+::: {.column .fragment width="55%"}
+![](images/value-box-app.png){.border width="80%"}
+:::
+:::
+
+```{=html}
+<style type="text/css">
+#value-box-component pre.sourceCode code {
+  max-height: 750px;
+}
+</style>
+```
+## Text Content {.component-slide}
+
+::: columns
+::: {.column width="55%"}
+```` {.python .pymd code-line-numbers="|17-22|"}
+## Column
+
+```{{python}}
+#| title: Population
+px.area(df, x="year", y="pop", 
+        color="continent", 
+        line_group="country")
+```
+
+```{{python}}
+#| title: Life Expectancy
+px.line(df, x="year", y="lifeExp", 
+        color="continent", 
+        line_group="country")
+```
+
+::: {.card}
+Gapminder combines data from multiple sources
+into unique coherent time-series that can’t be
+found elsewhere. Learn more about the Gampminder
+dataset at <https://www.gapminder.org/data/>.
+:::
+````
+:::
+
+::: {.column .fragment width="45%"}
+![](images/text-content-column.png){width="100%"}
+:::
+:::
+
+## Expanding Cards
+
+Cards provide an **Expand** button which appears at bottom right on hover:
+
+![](images/expanding-cards.png)
+
+##  {.no-line background-image="images/expanding-cards-expanded.png" background-size="contain"}
+
+
