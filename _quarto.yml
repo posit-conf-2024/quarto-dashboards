@@ -50,8 +50,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, style/quarto-asa.scss]
-      dark: [cosmo, style/quarto-asa.scss, style/dark.scss]
+      light: [cosmo, style/quarto-conf.scss]
+      dark: [cosmo, style/quarto-conf.scss, style/dark.scss]
     linkcolor: "#589398"
     toc: true
     code-copy: true
