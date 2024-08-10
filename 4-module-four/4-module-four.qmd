@@ -20,3 +20,131 @@ execute:
   freeze: auto
   echo: true
 ---
+
+## Dashboard Deployment
+
+Dashboards are typically just static HTML pages so can be deployed to any web server or web host.
+
+```{=html}
+<table id="deployment-table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 65%">
+</colgroup>
+<tbody>
+<tr class="odd fragment">
+<td>Static</td>
+<td><span>Rendered a single time (e.g.&nbsp;when underlying data won’t ever change)</span></td>
+</tr>
+<tr class="even fragment">
+<td>Scheduled</td>
+<td><span>Rendered on a schedule (e.g.&nbsp;via <code>cron</code> job) to accommodate changing data.</span></td>
+</tr>
+<tr class="odd fragment">
+<td>Parameterized</td>
+<td><span>Variations of static or scheduled dashboards based on parameters.</span></td>
+</tr>
+<tr class="even fragment">
+<td>Interactive</td>
+<td><span>Fully interactive dashboard using Shiny (requires a server for deployment).</span></td>
+</tr>
+</tbody>
+</table>
+
+<style type="text/css">
+#deployment-table td {
+  border-bottom: none;
+}
+#deployment-table td:first-of-type {
+  font-weight: 800;
+}
+</style>
+```
+
+## Parameterized Dashboards
+
+::: columns
+::: column
+![](images/stock-explorer-dashboard.png)
+:::
+
+::: column
+Add a parameters tag to the first cell (based on [papermill](https://papermill.readthedocs.io/en/latest/usage-parameterize.html)) :
+
+```` python
+```{{python}}
+#| tags: [parameters]
+ticker = "BA"
+```
+````
+
+Use the `-P` command line option to vary the parameter:
+
+``` bash
+quarto render dashboard.qmd -P ticker:GOOG
+```
+:::
+:::
+
+## Interactive Dashboards
+
+<https://quarto.org/docs/dashboards/interactivity/shiny-python/>
+
+::: columns
+::: {.column width="40%"}
+-   For interactive exploration, some dashboards can benefit from a live Python backend
+
+-   To do this with Quarto Dashboards, add interactive [Shiny](https://shiny.posit.co/py/) components
+
+-   Deploy with or without a server!
+:::
+
+::: {.column width="60%"}
+![](images/shiny-homepage.png){.border}
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/shiny-penguins.png" background-size="contain"}
+
+## Deployment of Interactive Dashboards
+
+::: columns
+::: {.column width="60%"}
+### Server
+
+::: {.column width="40%"}
+#### Cloud
+
+-   [shinyapps.io](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shinyapps.io-cloud-hosting)
+-   [Hugging Face](https://huggingface.co/docs/hub/spaces-sdks-docker-shiny)
+-   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
+:::
+
+::: {.column width="50%"}
+#### On-Prem
+
+-   [Shiny Server](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shiny-server-open-source) (open source)
+-   [Posit Connect](https://shiny.posit.co/py/docs/deploy.html#deploy-to-posit-connect-commercial) (commercial)
+-   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
+:::
+:::
+
+::: {.column .fragment width="40%"}
+### Serverless
+
+Using [Pyodide](https://pyodide.org/)
+
+\[[Example](https://wch.github.io/retirement-simulation-dashboard/)\]
+:::
+:::
+
+# Learning More
+
+## Resources {style="margin-top: 0.6em; font-size: 1em;"}
+
+|                   |                                       |
+|-------------------|---------------------------------------|
+| About Quarto      | <https://quarto.org/>                 |
+| Quarto Dashboards | <https://quarto.org/docs/dashboards/> |
+| Shiny for R.      | <https://shiny.posit.co/r/>          |
+| Shiny for Python  | <https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/>          |
