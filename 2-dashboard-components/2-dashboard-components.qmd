@@ -407,5 +407,3 @@ Cards provide an **Expand** button which appears at bottom right on hover:
 ![](images/expanding-cards.png)
 
 ##  {.no-line background-image="images/expanding-cards-expanded.png" background-size="contain"}
-
-

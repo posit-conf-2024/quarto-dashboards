@@ -7,8 +7,8 @@ author:
       - name: Duke University
       - name: Posit, PBC
 date: "2024-08-12"
-footer: "https://pos.it/quarto-dashboards-24"
-logo: "../images/logo.png"
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
 format:
   revealjs:
     theme: ../style/slides.scss

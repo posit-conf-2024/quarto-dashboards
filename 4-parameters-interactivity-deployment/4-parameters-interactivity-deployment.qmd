@@ -1,5 +1,5 @@
 ---
-title: "Module four"
+title: "Parameters, interactivity,<br>and deployment"
 subtitle: "Build-a-Dashboard Workshop"
 author:   
   - name: Dr. Mine Çetinkaya-Rundel
@@ -7,8 +7,8 @@ author:
       - name: Duke University
       - name: Posit, PBC
 date: "2024-08-12"
-footer: "https://pos.it/quarto-dashboards-24"
-logo: "../images/logo.png"
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
 format:
   revealjs:
     theme: ../style/slides.scss
@@ -60,7 +60,6 @@ Dashboards are typically just static HTML pages so can be deployed to any web se
 }
 </style>
 ```
-
 ## Parameterized Dashboards
 
 ::: columns
@@ -142,9 +141,9 @@ Using [Pyodide](https://pyodide.org/)
 
 ## Resources {style="margin-top: 0.6em; font-size: 1em;"}
 
-|                   |                                       |
-|-------------------|---------------------------------------|
-| About Quarto      | <https://quarto.org/>                 |
-| Quarto Dashboards | <https://quarto.org/docs/dashboards/> |
-| Shiny for R.      | <https://shiny.posit.co/r/>          |
-| Shiny for Python  | <https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/>          |
+|                   |                                                                        |
+|------------------------|------------------------------------------------|
+| About Quarto      | <https://quarto.org/>                                                  |
+| Quarto Dashboards | <https://quarto.org/docs/dashboards/>                                  |
+| Shiny for R.      | <https://shiny.posit.co/r/>                                            |
+| Shiny for Python  | <https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/> |
