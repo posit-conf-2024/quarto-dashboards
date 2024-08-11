@@ -62,3 +62,6 @@ format:
 
 execute:
   freeze: auto
+  echo: true
+
+editor: visual
