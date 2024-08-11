@@ -1,7 +1,9 @@
 project:
   type: website
   resources:
-    - exercises.zip
+    - images/python-logo.png
+    - images/r-logo.png
+    - images/code-icon.png
 
 website:
   page-navigation: true
