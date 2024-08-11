@@ -166,18 +166,18 @@
     "text": "Quarto version\n\n\n\n\n\n\nTip\n\n\nRun the following in your Terminal to find your Quarto version:\n\n\nTerminal\n\nquarto --version"
   },
   {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#demo-weather-dashboard",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#demo-weather-dashboard",
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#demo-olympic-games-dashboard",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#demo-olympic-games-dashboard",
     "title": "Hello, dashboards!",
-    "section": "Demo: Weather dashboard",
-    "text": "Demo: Weather dashboard\n\nhttps://mine.quarto.pub/weatherdash-r\n\n\nhttps://mine.quarto.pub/weatherdash-py\n\nCode: https://github.com/posit-conf-2024/weatherdash"
+    "section": "Demo: Olympic Games dashboard",
+    "text": "Demo: Olympic Games dashboard\n\nhttps://mine.quarto.pub/olympicdash-r\n\n\nhttps://mine.quarto.pub/olympicdash-py\n\n\nhttps://github.com/posit-conf-2024/olympicdash"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
     "href": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
     "title": "Hello, dashboards!",
     "section": "Notebook ➝ Dashboard",
-    "text": "Notebook ➝ Dashboard\n\n\n\nweatherdash-r.qmd\n\n---\ntitle: \"The Weather Dashboard\"\nformat: dashboard\n---\n\n# notebook content goes here...\n\n\n\n\n\nweatherdash-py.qmd\n\n---\ntitle: \"The Weather Dashboard\"\nformat: dashboard\n---\n\n# notebook content goes here..."
+    "text": "Notebook ➝ Dashboard\n\n\n\nolympicdash-r.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\n---\n\n# notebook content goes here...\n\n\n\n\n\nolympicdash-py.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\n---\n\n# notebook content goes here..."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#cards",
@@ -212,49 +212,49 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard",
     "title": "Hello, dashboards!",
     "section": "Step 1: format: dashboard",
-    "text": "Step 1: format: dashboard\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---"
+    "text": "Step 1: format: dashboard\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
     "title": "Hello, dashboards!",
     "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```"
+    "text": "Step 2: Add a card\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
     "title": "Hello, dashboards!",
     "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```"
+    "text": "Step 2: Add a card\n\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+    "text": "Step 3: Add another card\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
     "title": "Hello, dashboards!",
     "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+    "text": "Step 4: Add titles to cards\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
     "title": "Hello, dashboards!",
     "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+    "text": "Step 4: Add titles to cards\n\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
@@ -268,56 +268,91 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard-1",
     "title": "Hello, dashboards!",
     "section": "Step 1: format: dashboard",
-    "text": "Step 1: format: dashboard\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---"
+    "text": "Step 1: format: dashboard\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-2",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-2",
     "title": "Hello, dashboards!",
     "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Step 2: Add a card\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-3",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-3",
     "title": "Hello, dashboards!",
     "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Step 2: Add a card\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-2",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-2",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 3: Add another card\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-3",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-3",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-2",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-2",
     "title": "Hello, dashboards!",
     "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 4: Add titles to cards\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-3",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-3",
     "title": "Hello, dashboards!",
     "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 4: Add titles to cards\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, geom_point, aes\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4-1",
     "title": "Hello, dashboards!",
     "section": "Steps 1 - 4",
-    "text": "Steps 1 - 4\n\n\n\n\n\n\n\n\n\npos.it/quarto-dashboards-24"
+    "text": "Steps 1 - 4"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#start",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#start",
+    "title": "Hello, dashboards!",
+    "section": "Start",
+    "text": "Start\nLocate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.\n\nStart with olympicdash-r-1-begin.qmd.\n\n\nStart with olympicdash-py-1-begin.qmd."
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#goal",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#goal",
+    "title": "Hello, dashboards!",
+    "section": "Goal",
+    "text": "Goal\nYour goal is to create one of the following dashboards."
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 1",
+    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 03:00"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
+    "title": "Hello, dashboards!",
+    "section": "Step 2",
+    "text": "Step 2\n\n\nAdd a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you’re building).\nAdd the olympics logo from the images folder.\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3",
+    "title": "Hello, dashboards!",
+    "section": "Step 3",
+    "text": "Step 3\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/quarto-dashboards-24"
   },
   {
     "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#dashboard-deployment",
