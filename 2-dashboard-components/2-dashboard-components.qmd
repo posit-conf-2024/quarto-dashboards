@@ -15,10 +15,6 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-editor: visual
-execute:
-  freeze: auto
-  echo: true
 ---
 
 # Dashboard components
@@ -44,366 +40,533 @@ The content of cards typically maps to *cells* in your notebook or source docume
 
 ![](images/cards.png)
 
-## Navigation bar and pages
+## A note on computing language
 
-![](images/navigation-toolbar.png)
+-   The examples in this module will primarily feature R code in code cells
 
-::: {style="margin-top: 0.7em;"}
-``` {.python .pymd}
---- 
-title: "Palmer Penguins"
-author: "Cobblepot Analytics"
-format: 
-  dashboard:
-    logo: images/penguins.png
-    nav-buttons: [linkedin, twitter, github]
----
+-   All code in code cells can be replaced with Python, Julia, Observable, etc. and the layout would look exactly the same
 
-# Bills
+-   When/if different behavior in layout is expected, this will be explicitly called out and examples in other computing languages will also be provided
 
-# Flippers
+# Navigation bar and pages
 
-# Data
-```
+## Pages {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|10,18"}
+{{< include _pages.qmd >}}
+````
 :::
 
-## Sidebars: Page Level {.component-slide}
+## Pages {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="10"}
+{{< include _pages.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/pages-scatter.png)
+:::
+:::
+
+## Pages {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="18"}
+{{< include _pages.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/pages-bar.png)
+:::
+:::
+
+## Logo {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-5"}
+{{< include _logo.qmd >}}
+````
+:::
+
+## Logo {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="3-5"}
+{{< include _logo.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/logo.png)
+:::
+:::
+
+## Navigation buttons {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|6-15"}
+{{< include _nav-buttons.qmd >}}
+````
+:::
+
+## Navigation buttons {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="6-15"}
+{{< include _nav-buttons.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/nav-buttons.png)
+:::
+:::
+
+# Sidebars, rows, columns, and tabsets
+
+## Sidebars
+
+-   For information about the dashboard, data, etc. and/or for user inputs in interactive dashboards
+
+-   Can be at the global or page level
+
+## Sidebars - Global {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|22-24"}
+{{< include _sidebar-global.qmd >}}
+````
+:::
+
+## Sidebars - Global {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-24"}
+{{< include _sidebar-global.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-global-scatter.png)
+:::
+:::
+
+## Sidebars - Global {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-24"}
+{{< include _sidebar-global.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-global-bar.png)
+:::
+:::
+
+## Sidebars - Page {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|22-28"}
+{{< include _sidebar-page.qmd >}}
+````
+:::
+
+## Sidebars - Page {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-28"}
+{{< include _sidebar-page.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-page-scatter.png)
+:::
+:::
+
+## Sidebars - Page {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-28"}
+{{< include _sidebar-page.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-page-bar.png)
+:::
+:::
+
+## Rows {auto-animate="true"}
+
+By default, cards are laid out in rows:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12,20"}
+{{< include _rows.qmd >}}
+````
+:::
+
+## Rows {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,20"}
+{{< include _rows.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/rows.png)
+:::
+:::
+
+## Rows {auto-animate="true"}
+
+Default value of `orientation` is `rows`:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5"}
+{{< include _rows-orientation.qmd >}}
+````
+:::
+
+## Columns {auto-animate="true"}
+
+Setting `orientation` to `rows` makes each `##` indicate a column instead of a row:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5"}
+{{< include _columns.qmd >}}
+````
+:::
+
+## Columns {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5,13,21"}
+{{< include _columns.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/columns.png)
+:::
+:::
+
+## Rows, then columns {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12-22|24-40"}
+{{< include _rows-then-columns.qmd >}}
+````
+:::
+
+## Rows, then columns {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,14,18,24,26,34"}
+{{< include _rows-then-columns.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/rows-then-columns.png)
+:::
+:::
+
+## Columns, then rows {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|5|12-22|24-40"}
+{{< include _columns-then-rows.qmd >}}
+````
+:::
+
+## Columns, then rows {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="5"}
+{{< include _columns-then-rows.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/columns-then-rows.png)
+:::
+:::
+
+## Heights and widths of rows and columns {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12,24|14,18|26,34"}
+{{< include _rows-then-columns-height-width.qmd >}}
+````
+:::
+
+## Heights and widths of rows and columns {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,24,14,18,26,34"}
+{{< include _rows-then-columns-height-width.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/rows-then-columns-heights-widths.png)
+:::
+:::
+
+## `fill` vs. `flow`
+
+::: incremental
+-   Each row in a dashboard that is not given an explicit height will determine its size by either `fill`ing available space or by `flow`ing to its natural height
+
+-   `fill`ling layout is generally the default, however for certain types of content (e.g., markdown text) `flow` layout is the default.
+
+-   If the default behavior is not what you want, you can explicitly specify filling or flowing behavior using the `.fill` and `.flow` classes applied to a row.
+
+    ```` {.yaml filename="dashboard-r.qmd"}
+    ## Row {.fill}
+
+    ## Row {.flow}
+    ````
+:::
+
+## `scrolling`
+
+Need more space?
+Set `scrolling: true` for accommodate page overflow.
+
+``` yaml
+---
+format: 
+  dashboard:
+    scrolling: true 
+---
+```
+
+. . .
+
+::: callout-note
+This option is handy for adding more rows of cards to a dashboard, however spreading content across **pages** and **tabsets** can be a better way to present information.
+:::
+
+## Per page controls {.smaller}
+
+`orientation` and `scrolling` can be provided at the dashboard or page level:
+
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12|24"}
+{{< include _per-page-controls.qmd >}}
+```` 
+
+## Tabsets {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12|24"}
+{{< include _tabsets.qmd >}}
+````
+:::
+
+## Tabsets {.smaller auto-animate="true"}
+
+Each card within a row/column or each row/column within another becomes a tab: 
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,24"}
+{{< include _tabsets.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/tabsets.png)
+:::
+:::
+
+# Cards
+
+## Cards
+
+::: incremental
+-   Fundamental unit of display within dashboards
+
+-   Created automatically for cells and markdown content that are within rows and columns
+
+-   Can be created manually with a `card` div:
+
+    ```` {.yaml}
+    ::: {.card}
+    This text will be displayed within a card
+    :::
+    ````
+:::
+
+## Card titles {.smaller auto-animate="true"}
+
+Card titles can be provided as a cell option or within a `cat()` (R) or `print()` (Python) statement:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|13|19-21"}
+{{< include _card-titles.qmd >}}
+````
+:::
+
+## Card titles {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="13,19-21"}
+{{< include _card-titles.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/card-titles.png)
+:::
+:::
+
+## Pop quiz!
+
+::: your-turn
+Which of the following cells will become a card in a dashboard?
+:::
 
 ::: columns
 ::: column
-```` {.python .pymd style="margin-top: 45px;"}
----
-title: "Sidebar"
-format: dashboard
----
-    
-# Page 1
+a. 
 
-## {.sidebar}
-
-```{{python}}
+```{{r}}
+library(palmerpenguins)
 ```
 
-## Column 
+b. 
 
-```{{python}}
+```{{r}}
+x <- 2
 ```
-
-```{{python}}
-```
-````
 :::
-
-::: {.column .fragment}
-![](images/chart-input-sidebar.png)
-:::
-:::
-
-## Sidebars: Global {.compontent-slide}
-
-::: columns
 ::: column
-```` {.python .pymd style="margin-top: 45px;"}
----
-title: "Global Sidebar"
-format: dashboard
----
-    
-# {.sidebar}
+c.
 
-Sidebar content (e.g. inputs)
-
-# Plot
-
-```{{python}}
+```{{r}}
+plot(cars)
 ```
 
-# Data
+d. 
 
-```{{python}}
+```{{r}}
+#| output: false
+2 + 2
 ```
+:::
+:::
+
+## Multiple outputs {.smaller auto-animate="true"}
+
+If a cell generates multiple outputs, they get wrapped in a single cell:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|14-15|17-18"}
+{{< include _card-multiple-outputs-r.qmd >}}
 ````
 :::
 
-::: {.column .fragment}
-![](images/global-sidebar.png){width="80%"}
-:::
-:::
-
-## Layout: Rows {.component-slide}
+## Multiple outputs {.smaller auto-animate="true"}
 
 ::: columns
-::: {.column style="margin-top: 65px;"}
-```` {.python .pymd}
----
-title: "Focal (Top)"
-format: dashboard
----
-    
-## Row {height=70%}
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="14-15,17-18"}
+{{< include _card-multiple-outputs-r.qmd >}}
+````
+:::
+:::
 
-```{{python}}
-```
+::: {.column width="60%"}
+![](images/card-multiple-outputs.png)
+:::
+:::
 
-## Row {height=30%}
+## Multiple output layout {.smaller auto-animate="true"}
 
-```{{python}}
-```
+You can control layout of multiple outputs with `layout-ncol`:
 
-```{{python}}
-```
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|14"}
+{{< include _card-multiple-output-layout-r.qmd >}}
 ````
 :::
 
-::: {.column .fragment}
-![](images/chart-focal-top.png){width="90%"}
-:::
-:::
-
-##  {.no-line background-image="images/dashboards/customer-churn.png" background-size="contain"}
-
-## Layout: Columns {.component-slide}
+## Multiple output layout {.smaller auto-animate="true"}
 
 ::: columns
-::: {.column style="margin-top: 40px;"}
-```` {.python .pymd}
----
-title: "Focal (Top)"
-format: 
-  dashboard:
-    orientation: columns
----
-    
-## Column {width=60%}
-
-```{{python}}
-```
-
-## Column {width=40%}
-
-```{{python}}
-```
-
-```{{python}}
-```
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="14"}
+{{< include _card-multiple-output-layout-r.qmd >}}
 ````
 :::
+:::
 
-::: {.column .fragment}
-![](images/chart-focal-left.png)
+::: {.column width="60%"}
+![](images/card-multiple-output-layout.png)
 :::
 :::
 
-##  {.no-line background-image="images/dashboards/housing-market.png" background-size="contain"}
+## Value boxes
 
-## Tabsets {.component-slide}
-
-::: columns
-::: {.column style="margin-top: 45px;"}
-```` {.python .pymd}
----
-title: "Palmer Penguins"
-format: dashboard
----
-    
-## Row
-
-```{{python}}
-```
-
-## Row {.tabset}
-
-```{{python}}
-#| title: Chart 2
-```
-
-```{{python}}
-#| title: Chart 3
-```
-````
-:::
-
-::: {.column .fragment}
-![](images/chart-tabset-row.png){width="87%"}
-:::
-:::
-
-##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
-
-## Plots {.component-slide}
-
-::: columns
-::: {.column .fragment .smaller}
-[plotly](https://plotly.com/python/)
-
-```` python
-```{{python}}
-#| title: GDP and Life Expectancy
-import plotly.express as px
-df = px.data.gapminder()
-px.scatter(
-  df, x="gdpPercap", y="lifeExp", 
-  animation_frame="year", animation_group="country",
-  size="pop", color="continent", hover_name="country", 
-  facet_col="continent", log_x=True, size_max=45, 
-  range_x=[100,100000], range_y=[25,90]
-)
-```
-````
-:::
-
-::: {.column .fragment}
-![](images/plotly-interactive.png){width="85%"}
-:::
-:::
-
-::: columns
-::: {.column .fragment .smaller}
-[ipyleaflet](https://ipyleaflet.readthedocs.io)
-
-```` python
-```{{python}}
-#| title: "World Map"
-#| padding: 0px
-from ipyleaflet import Map, basemaps, basemap_to_tiles
-Map(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),
-    center=(48.204793, 350.121558), zoom=2)
-```
-````
-:::
-
-::: {.column .fragment}
-![](images/leaflet-card-title-padding.png){width="85%"}
-:::
-:::
-
-## Tables {#component-tables .component-slide}
-
-::: columns
-::: {.column .fragment}
-[tabulate](https://pypi.org/project/tabulate/)
-
-```` python
-```{{python}}
-from tabulate import tabulate
-from IPython.display import Markdown
-Markdown(tabulate(penguins, showindex=False)}
-```
-````
-:::
-
-::: {.column .fragment}
-![](images/tabulate.png)
-:::
-:::
-
-::: columns
-::: {.column .fragment}
-[itables](https://pypi.org/project/itables/)
-
-```` python
-```{{python}}
-from itables import show
-show(penguins)
-```
-````
-:::
-
-::: {.column .fragment}
-![](images/itables-scrolling.png)
-:::
-:::
-
-```{=html}
-<style type="text/css">
-.component-slide .column > p {
-  margin-top: 0;
-}
-.component-slide .column > p > img {
-  margin-top: -8px;
-}
-#component-tables .column > div.sourceCode {
-  margin-top: 30px;
-}
-</style>
-```
-## Value Boxes {#value-box-component .component-slide}
-
-::: columns
-::: {.column width="45%"}
-```` {.python .pymd style="margin-top: 45px;" code-line-numbers="|3-9|14-17|"}
-## Row
-
-```{{python}}
-#| component: valuebox
-#| title: "Current Price"
-dict(icon = "currency-dollar",
-     color = "secondary",
-     value = get_price(data))
-```
-
-```{{python}}
-#| component: valuebox
-#| title: "Change"
-change = get_change(data)
-dict(value = change['amount'],
-     icon = change['icon'],
-     color = change['color']) 
-```
-````
-:::
-
-::: {.column .fragment width="55%"}
-![](images/value-box-app.png){.border width="80%"}
-:::
-:::
-
-```{=html}
-<style type="text/css">
-#value-box-component pre.sourceCode code {
-  max-height: 750px;
-}
-</style>
-```
-## Text Content {.component-slide}
-
-::: columns
-::: {.column width="55%"}
-```` {.python .pymd code-line-numbers="|17-22|"}
-## Column
-
-```{{python}}
-#| title: Population
-px.area(df, x="year", y="pop", 
-        color="continent", 
-        line_group="country")
-```
-
-```{{python}}
-#| title: Life Expectancy
-px.line(df, x="year", y="lifeExp", 
-        color="continent", 
-        line_group="country")
-```
-
-::: {.card}
-Gapminder combines data from multiple sources
-into unique coherent time-series that can’t be
-found elsewhere. Learn more about the Gampminder
-dataset at <https://www.gapminder.org/data/>.
-:::
-````
-:::
-
-::: {.column .fragment width="45%"}
-![](images/text-content-column.png){width="100%"}
-:::
-:::
+## Markdown text
 
 ## Expanding Cards
 
 Cards provide an **Expand** button which appears at bottom right on hover:
 
 ![](images/expanding-cards.png)
-
-##  {.no-line background-image="images/expanding-cards-expanded.png" background-size="contain"}

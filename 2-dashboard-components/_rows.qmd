@@ -1,0 +1,26 @@
+---
+title: "Rows"
+format: 
+  dashboard:
+    logo: images/beetle.png
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+## Scatter
+
+```{{r}}
+#| title: Highway vs. city mileage
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+## Bar
+
+```{{r}}
+#| title: Drive types
+ggplot(mpg, aes(x = drv)) +
+  geom_bar()
+```

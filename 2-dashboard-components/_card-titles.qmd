@@ -1,0 +1,25 @@
+---
+title: "Card titles"
+format: 
+  dashboard:
+    logo: images/beetle.png
+---
+
+```{{r}}
+library(ggplot2)
+```
+
+```{{r}}
+#| title: Highway vs. city mileage
+ggplot(mpg, aes(x = cty, y = hwy)) +
+  geom_point()
+```
+
+```{{r}}
+n_cars <- nrow(mpg)
+
+cat("title=", "Drive types of", n_cars, "cars")
+
+ggplot(mpg, aes(x = drv)) +
+  geom_bar()
+```
