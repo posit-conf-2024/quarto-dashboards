@@ -26,6 +26,8 @@ The materials will continue to be updated until the workshop.
 | 13:30 - 15:00 | [Theming and styling](3-themint-styling/)          |
 | 15:00 - 15:30 | ☕ *Coffee break* |
 | 15:30 - 17:00 | [Parameters, interactivity, and deployment](4-parameters-interactivity-deployment/) |
+| 16:30 - 17:00 | Quarto Q & A |
+
 
 ## Overview
 

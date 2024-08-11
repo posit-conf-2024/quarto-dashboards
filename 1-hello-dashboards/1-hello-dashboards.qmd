@@ -15,10 +15,6 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-editor: visual
-execute:
-  freeze: auto
-  echo: true
 ---
 
 # Setup instructions
@@ -69,21 +65,18 @@ One link for all materials
 
 ![](../images/logo.png){fig-alt="Logo for workshop" fig-align="center"}
 
-## Schedule {.smaller}
+## Schedule
 
-::: callout-important
-TO DO: Update schedule.
-:::
-
-| Time          | Activity           |
-|:--------------|:-------------------|
-| 09:00 - 10:30 | Hello, dashboards! |
-| 10:30 - 11:00 | *Coffee break*     |
-| 11:00 - 12:30 | Module 2           |
-| 12:30 - 13:30 | *Lunch break*      |
-| 13:30 - 15:00 | Module 3           |
-| 15:00 - 15:30 | *Coffee break*     |
-| 15:30 - 17:00 | Module 4           |
+| Time          | Activity             |
+|:--------------|:---------------------|
+| 09:00 - 10:30 | Hello, dashboards!   |
+| 10:30 - 11:00 | ☕ *Coffee break*     |
+| 11:00 - 12:30 | Dashboard components |
+| 12:30 - 13:30 | 🍽️ *Lunch break*     |
+| 13:30 - 15:00 | Theming and styling  |
+| 15:00 - 15:30 | ☕ *Coffee break*     |
+| 15:30 - 17:00 | Parameters, interactivity, and deployment |
+| 16:30 - 17:00 | Quarto Q & A         |
 
 ## WiFi
 
@@ -780,11 +773,11 @@ from plotnine.data import mpg
 Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
 
 ::: r-box
-Start with `olympicdash-r-1-begin.qmd`.
+Start with `olympicdash-r-1.qmd`.
 :::
 
 ::: python-box
-Start with `olympicdash-py-1-begin.qmd`.
+Start with `olympicdash-py-1.qmd`.
 :::
 
 ## Goal
