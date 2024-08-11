@@ -279,24 +279,26 @@ quarto --version
 
 ##  {.no-line background-image="images/dashboards/stock-explorer.png" background-size="contain"}
 
-## Demo: Weather dashboard
+## Demo: Olympic Games dashboard
 
 ::: r-box
-<https://mine.quarto.pub/weatherdash-r>
+<https://mine.quarto.pub/olympicdash-r>
 :::
 
 ::: python-box
-<https://mine.quarto.pub/weatherdash-py>
+<https://mine.quarto.pub/olympicdash-py>
 :::
 
-Code: <https://github.com/posit-conf-2024/weatherdash>
+::: code-box
+<https://github.com/posit-conf-2024/olympicdash>
+:::
 
 ## Notebook ➝ Dashboard
 
 ::: r-box
-``` {.markdown filename="weatherdash-r.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
+``` {.markdown filename="olympicdash-r.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
 ---
-title: "The Weather Dashboard"
+title: "Olympic Games"
 format: dashboard
 ---
 
@@ -305,9 +307,9 @@ format: dashboard
 :::
 
 ::: python-box
-``` {.markdown filename="weatherdash-py.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
+``` {.markdown filename="olympicdash-py.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
 ---
-title: "The Weather Dashboard"
+title: "Olympic Games"
 format: dashboard
 ---
 
@@ -379,15 +381,18 @@ Let's make a dashboard, step-by-step
 
 ## Step 1: `format: dashboard` {auto-animate="true"}
 
+::: r-box
 ``` {.yaml filename="dashboard-r.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
 ---
 ```
+:::
 
 ## Step 2: Add a card {auto-animate="true"}
 
+::: r-box
 ```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|10-13"}
 ---
 title: "My first Quarto dashboard"
@@ -403,11 +408,13 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
   geom_point()
 ```
 ````
+:::
 
 ## Step 2: Add a card {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
+::: r-box
 ```` {.yaml filename="dashboard-r.qmd"}
 ---
 title: "My first Quarto dashboard"
@@ -424,6 +431,7 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
 ```
 ````
 :::
+:::
 
 ::: {.column width="60%"}
 ![](images/first-dashboard-r-1.png)
@@ -432,6 +440,7 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
 
 ## Step 3: Add another card {auto-animate="true"}
 
+::: r-box
 ```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|15-18"}
 ---
 title: "My first Quarto dashboard"
@@ -452,11 +461,13 @@ ggplot(mpg, aes(x = drv)) +
   geom_bar()
 ```
 ````
+:::
 
 ## Step 3: Add another card {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
+::: r-box
 ```` {.yaml filename="dashboard-r.qmd"}
 ---
 title: "My first Quarto dashboard"
@@ -478,6 +489,7 @@ ggplot(mpg, aes(x = drv)) +
 ```
 ````
 :::
+:::
 
 ::: {.column width="60%"}
 ![](images/first-dashboard-r-2.png)
@@ -486,6 +498,7 @@ ggplot(mpg, aes(x = drv)) +
 
 ## Step 4: Add titles to cards {auto-animate="true"}
 
+::: r-box
 ```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|11,17"}
 ---
 title: "My first Quarto dashboard"
@@ -508,11 +521,13 @@ ggplot(mpg, aes(x = drv)) +
   geom_bar()
 ```
 ````
+:::
 
 ## Step 4: Add titles to cards {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
+::: r-box
 ```` {.yaml filename="dashboard-r.qmd"}
 ---
 title: "My first Quarto dashboard"
@@ -536,6 +551,7 @@ ggplot(mpg, aes(x = drv)) +
 ```
 ````
 :::
+:::
 
 ::: {.column width="60%"}
 ![](images/first-dashboard-r-3.png)
@@ -550,15 +566,18 @@ ggplot(mpg, aes(x = drv)) +
 
 ## Step 1: `format: dashboard` {auto-animate="true"}
 
+::: python-box
 ``` {.yaml filename="dashboard-py.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
 ---
 ```
+:::
 
 ## Step 2: Add a card {auto-animate="true"}
 
+::: python-box
 ```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|10-16"}
 ---
 title: "My first Quarto dashboard"
@@ -577,11 +596,13 @@ from plotnine.data import mpg
 )
 ```
 ````
+:::
 
 ## Step 2: Add a card {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
+::: python-box
 ```` {.yaml filename="dashboard-py.qmd"}
 ---
 title: "My first Quarto dashboard"
@@ -601,6 +622,7 @@ from plotnine.data import mpg
 ```
 ````
 :::
+:::
 
 ::: {.column width="60%"}
 ![](images/first-dashboard-py-1.png)
@@ -609,6 +631,7 @@ from plotnine.data import mpg
 
 ## Step 3: Add another card {auto-animate="true"}
 
+::: python-box
 ```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|18-23"}
 ---
 title: "My first Quarto dashboard"
@@ -634,11 +657,13 @@ from plotnine.data import mpg
 )
 ```
 ````
+:::
 
 ## Step 3: Add another card {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
+::: python-box
 ```` {.yaml filename="dashboard-py.qmd"}
 ---
 title: "My first Quarto dashboard"
@@ -665,6 +690,7 @@ from plotnine.data import mpg
 ```
 ````
 :::
+:::
 
 ::: {.column width="60%"}
 ![](images/first-dashboard-py-2.png)
@@ -673,6 +699,7 @@ from plotnine.data import mpg
 
 ## Step 4: Add titles to cards {auto-animate="true"}
 
+::: python-box
 ```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|12,20"}
 ---
 title: "My first Quarto dashboard"
@@ -700,28 +727,33 @@ from plotnine.data import mpg
 )
 ```
 ````
+:::
 
 ## Step 4: Add titles to cards {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
+::: python-box
 ```` {.yaml filename="dashboard-py.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
 ---
 
-```{{r}}
-library(ggplot2)
+```{{python}}
+from plotnine import ggplot, geom_point, aes
+from plotnine.data import mpg
 ```
 
-```{{r}}
+```{{python}}
 #| title: Highway vs. city mileage
-ggplot(mpg, aes(x = cty, y = hwy)) +
-  geom_point()
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
 ```
 
-```{{r}}
+```{{python}}
 #| title: Drive types
 (
     ggplot(mpg, aes(x = "drv"))
@@ -729,6 +761,7 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
 )
 ```
 ````
+:::
 :::
 
 ::: {.column width="60%"}
@@ -739,3 +772,101 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
 ## Steps 1 - 4 {auto-animate="true"}
 
 ![](images/first-dashboard-py-3.png){fig-align="center"}
+
+# Your turn
+
+## Start
+
+Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
+
+::: r-box
+Start with `olympicdash-r-1-begin.qmd`.
+:::
+
+::: python-box
+Start with `olympicdash-py-1-begin.qmd`.
+:::
+
+## Goal
+
+Your goal is to create one of the following dashboards.
+
+::: columns
+::: column
+::: r-box
+![](images/olympicdash-r-1.png)
+:::
+:::
+::: column
+::: python-box
+![](images/olympicdash-py-1.png)
+:::
+:::
+:::
+
+## Step 1
+
+::: your-turn
+- Turn the output to a dashboard.
+- Add `title`s to code cells.
+:::
+
+::: columns
+::: column
+::: r-box
+![](images/olympicdash-r-1.png)
+:::
+:::
+::: column
+::: python-box
+![](images/olympicdash-py-1.png)
+:::
+:::
+:::
+
+{{< countdown minutes=3 >}}
+
+## Step 2
+
+::: your-turn
+- Add a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you're building).
+- Add the olympics logo from the `images` folder.
+:::
+
+
+::: columns
+::: column
+::: r-box
+![](images/olympicdash-r-1.png)
+:::
+:::
+::: column
+::: python-box
+![](images/olympicdash-py-1.png)
+:::
+:::
+:::
+
+{{< countdown minutes=5 >}}
+
+## Step 3
+
+::: your-turn
+Reorganize the cards into rows and columns as shown below.
+:::
+
+
+::: columns
+::: column
+::: r-box
+![](images/olympicdash-r-1.png)
+:::
+:::
+::: column
+::: python-box
+![](images/olympicdash-py-1.png)
+:::
+:::
+:::
+
+{{< countdown minutes=5 >}}
