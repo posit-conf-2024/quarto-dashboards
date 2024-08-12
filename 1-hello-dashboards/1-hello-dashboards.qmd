@@ -578,7 +578,7 @@ format: dashboard
 ---
 
 ```{{python}}
-from plotnine import ggplot, geom_point, aes
+from plotnine import ggplot, aes, geom_point
 from plotnine.data import mpg
 ```
 
@@ -603,7 +603,7 @@ format: dashboard
 ---
 
 ```{{python}}
-from plotnine import ggplot, geom_point, aes
+from plotnine import ggplot, aes, geom_point
 from plotnine.data import mpg
 ```
 
@@ -632,7 +632,7 @@ format: dashboard
 ---
 
 ```{{python}}
-from plotnine import ggplot, geom_point, aes
+from plotnine import ggplot, aes, geom_point, geom_bar
 from plotnine.data import mpg
 ```
 
@@ -664,7 +664,7 @@ format: dashboard
 ---
 
 ```{{python}}
-from plotnine import ggplot, geom_point, aes
+from plotnine import ggplot, aes, geom_point, geom_bar
 from plotnine.data import mpg
 ```
 
@@ -700,7 +700,7 @@ format: dashboard
 ---
 
 ```{{python}}
-from plotnine import ggplot, geom_point, aes
+from plotnine import ggplot, aes, geom_point, geom_bar
 from plotnine.data import mpg
 ```
 
@@ -734,7 +734,7 @@ format: dashboard
 ---
 
 ```{{python}}
-from plotnine import ggplot, geom_point, aes
+from plotnine import ggplot, aes, geom_point, geom_bar
 from plotnine.data import mpg
 ```
 
