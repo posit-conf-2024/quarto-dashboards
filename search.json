@@ -358,36 +358,106 @@
     "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#dashboard-deployment",
     "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#dashboard-deployment",
     "title": "Parameters, interactivity,and deployment",
-    "section": "Dashboard Deployment",
-    "text": "Dashboard Deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
+    "section": "Dashboard deployment",
+    "text": "Dashboard deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameterized-dashboards",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameterized-dashboards",
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-1",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-1",
     "title": "Parameters, interactivity,and deployment",
-    "section": "Parameterized Dashboards",
-    "text": "Parameterized Dashboards\n\n\n\n\nAdd a parameters tag to the first cell (based on papermill) :\n```{python}\n#| tags: [parameters]\nticker = \"BA\"\n```\nUse the -P command line option to vary the parameter:\nquarto render dashboard.qmd -P ticker:GOOG"
+    "section": "Parameters",
+    "text": "Parameters\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Parameters\"\nformat: \n  dashboard:\n    logo: images/beetle.png\nparams:\n  class: \"compact\"\n---\n\n```{r}\nlibrary(ggplot2)\nlibrary(dplyr)\nmpg &lt;- mpg |&gt;\n  filter(class == params$class)\n```\n\n## Value boxes {height=\"25%\"}\n\n::: {.valuebox icon=\"car-front-fill\" color=\"info\"}\nClass\n\n`{r} params$class`\n:::\n\n```{r}\n#| label: calculate-values\nlowest_mileage_cty &lt;- mpg |&gt;\n  filter(cty == min(cty)) |&gt;\n  distinct(cty) |&gt;\n  pull(cty)\n\nhighest_mileage_cty &lt;- mpg |&gt;\n  filter(cty == max(cty)) |&gt;\n  distinct(cty) |&gt;\n  pull(cty)\n  \nrounded_mean_city_mileage &lt;- mpg |&gt;\n  summarize(round(mean(cty), 2)) |&gt;\n  pull()\n```\n\n```{r}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\nlist(\n  value = paste(lowest_mileage_cty, \"mpg\")\n)\n```\n\n```{r}\n#| content: valuebox\n#| title: \"Most efficient\"\nlist(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = paste(highest_mileage_cty, \"mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#interactive-dashboards",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#interactive-dashboards",
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-2",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-2",
     "title": "Parameters, interactivity,and deployment",
-    "section": "Interactive Dashboards",
-    "text": "Interactive Dashboards\nhttps://quarto.org/docs/dashboards/interactivity/shiny-python/\n\n\n\nFor interactive exploration, some dashboards can benefit from a live Python backend\nTo do this with Quarto Dashboards, add interactive Shiny components\nDeploy with or without a server!"
+    "section": "Parameters",
+    "text": "Parameters\n\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"Parameters\"\nformat: \n  dashboard:\n    logo: images/beetle.png\nparams:\n  class: \"compact\"\n---\n\n```{r}\nlibrary(ggplot2)\nlibrary(dplyr)\nmpg &lt;- mpg |&gt;\n  filter(class == params$class)\n```\n\n## Value boxes {height=\"25%\"}\n\n::: {.valuebox icon=\"car-front-fill\" color=\"info\"}\nClass\n\n`{r} params$class`\n:::\n\n```{r}\n#| label: calculate-values\nlowest_mileage_cty &lt;- mpg |&gt;\n  filter(cty == min(cty)) |&gt;\n  distinct(cty) |&gt;\n  pull(cty)\n\nhighest_mileage_cty &lt;- mpg |&gt;\n  filter(cty == max(cty)) |&gt;\n  distinct(cty) |&gt;\n  pull(cty)\n  \nrounded_mean_city_mileage &lt;- mpg |&gt;\n  summarize(round(mean(cty), 2)) |&gt;\n  pull()\n```\n\n```{r}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\nlist(\n  value = paste(lowest_mileage_cty, \"mpg\")\n)\n```\n\n```{r}\n#| content: valuebox\n#| title: \"Most efficient\"\nlist(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = paste(highest_mileage_cty, \"mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-3",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-3",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Parameters",
+    "text": "Parameters\n\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"Parameters\"\nformat: \n  dashboard:\n    logo: images/beetle.png\nparams:\n  class: \"midsize\"\n---\n\n```{r}\nlibrary(ggplot2)\nlibrary(dplyr)\nmpg &lt;- mpg |&gt;\n  filter(class == params$class)\n```\n\n## Value boxes {height=\"25%\"}\n\n::: {.valuebox icon=\"car-front-fill\" color=\"info\"}\nClass\n\n`{r} params$class`\n:::\n\n```{r}\n#| label: calculate-values\nlowest_mileage_cty &lt;- mpg |&gt;\n  filter(cty == min(cty)) |&gt;\n  distinct(cty) |&gt;\n  pull(cty)\n\nhighest_mileage_cty &lt;- mpg |&gt;\n  filter(cty == max(cty)) |&gt;\n  distinct(cty) |&gt;\n  pull(cty)\n  \nrounded_mean_city_mileage &lt;- mpg |&gt;\n  summarize(round(mean(cty), 2)) |&gt;\n  pull()\n```\n\n```{r}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\nlist(\n  value = paste(lowest_mileage_cty, \"mpg\")\n)\n```\n\n```{r}\n#| content: valuebox\n#| title: \"Most efficient\"\nlist(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = paste(highest_mileage_cty, \"mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#rendering-with-parameter",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#rendering-with-parameter",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Rendering with parameter",
+    "text": "Rendering with parameter\nUse the -P command line option to vary the parameter:\nquarto render dashboard-r.qmd -P class:\"suv\""
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-4",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#parameters-4",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Parameters",
+    "text": "Parameters\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"Valueboxes\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| tags: [parameters]\n\ncar_class = \"compact\"\n```\n\n```{python}\n#| label: filter-for-class\nfiltered_mpg = mpg[mpg['class'] == car_class]\nfiltered_mpg.reset_index(drop=True, inplace=True)\n```\n\n## Value boxes {height=\"25%\"}\n\n::: {.valuebox icon=\"car-front-fill\" color=\"info\"}\nClass\n\n`{python} car_class`\n:::\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = filtered_mpg['cty'].idxmin()\nlowest_mileage_car = filtered_mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = filtered_mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = filtered_mpg['cty'].idxmax()\nhighest_mileage_car = filtered_mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = filtered_mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = filtered_mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{python} str(rounded_mean_city_mileage)` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(filtered_mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(filtered_mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#interactivity-with-shiny",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#interactivity-with-shiny",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Interactivity with Shiny",
+    "text": "Interactivity with Shiny\n\n\nThe Shiny package (for R and for Python) provides an easy way to build web applications with R.\nQuarto dashboards can include embedded Shiny components (e.g., a plot with sliders that control its inputs) to add interactivity.\nLadder of complexity/customization: Quarto dashboard &gt; Quarto dashboard with Shiny components &gt; Shiny dashboard"
   },
   {
     "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#deployment-of-interactive-dashboards",
     "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#deployment-of-interactive-dashboards",
     "title": "Parameters, interactivity,and deployment",
-    "section": "Deployment of Interactive Dashboards",
-    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
+    "section": "Deployment of interactive dashboards",
+    "text": "Deployment of interactive dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]\nUsing ShinyLive"
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#resources",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#resources",
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#other-interactivity",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#other-interactivity",
     "title": "Parameters, interactivity,and deployment",
-    "section": "Resources",
-    "text": "Resources\n\n\n\nAbout Quarto\nhttps://quarto.org/\n\n\nQuarto Dashboards\nhttps://quarto.org/docs/dashboards/\n\n\nShiny for R.\nhttps://shiny.posit.co/r/\n\n\nShiny for Python\nhttps://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/\n\n\n\n\n\n\n\npos.it/quarto-dashboards-24"
+    "section": "Other interactivity",
+    "text": "Other interactivity\n\nObservable JS for client-side interactivity using the Observable dialect of JavaScript.\nJupyter Widgets or htmlwidgets for client-side interactivity based on standard Python and R JavaScript widget frameworks."
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#goal",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#goal",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Goal",
+    "text": "Goal\n\nDeploy your latest dashboard to QuartoPub.\nStretch goal: Add parameter and/or interactivity to your dashboard for narrowing down to or picking a year.\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#time-for-qa",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#time-for-qa",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Time for Q&A!",
+    "text": "Time for Q&A!"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#feedback",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#feedback",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Feedback",
+    "text": "Feedback\nPlease fill out the workshop survey at https://pos.it/conf-workshop-survey."
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#learning-more",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#learning-more",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Learning More",
+    "text": "Learning More\n\n\n\nAbout Quarto\nhttps://quarto.org/\n\n\nQuarto Dashboards\nhttps://quarto.org/docs/dashboards/\n\n\nShiny for R\nhttps://shiny.posit.co/r/\n\n\nShiny for Python\nhttps://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#quarto-at-positconf2024---tuesday",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#quarto-at-positconf2024---tuesday",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Quarto at posit::conf(2024) - Tuesday",
+    "text": "Quarto at posit::conf(2024) - Tuesday\n\nAutomated Reporting With Quarto: Beyond Copy And Paste - 2:40 PM - 4:00 PM PDT Columbia A/B\nMaking Decisions With Data - 2:40 PM - 4:00 PM PDT 300 | Columbia D\n\n… and many more on Wednesday!"
+  },
+  {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#thank-you",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#thank-you",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Thank you!",
+    "text": "Thank you!\nhttps://pos.it/conf-workshop-survey\n\n\n\n\npos.it/quarto-dashboards-24"
   },
   {
     "objectID": "2-dashboard-components/index.html",
