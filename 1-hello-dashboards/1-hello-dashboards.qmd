@@ -373,8 +373,6 @@ Cards are arranged into **rows** and **columns**.
 :::
 :::
 
-:::
-
 ## Step-by-step
 
 Let's make a dashboard, step-by-step
