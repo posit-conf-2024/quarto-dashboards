@@ -274,7 +274,7 @@ Default value of `orientation` is `rows`:
 
 ## Columns {auto-animate="true"}
 
-Setting `orientation` to `rows` makes each `##` indicate a column instead of a row:
+Setting `orientation` to `columns` makes each `##` indicate a column instead of a row:
 
 ::: {data-id="code"}
 ```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5"}
@@ -492,7 +492,7 @@ Which of the following cells will become a card in a dashboard?
 :::
 
 ::: columns
-::: column
+::: {.column width=45%}
 a.  
 
 ```{{r}}
@@ -506,7 +506,7 @@ x <- 2
 ```
 :::
 
-::: column
+::: {.column width=35%}
 c.  
 
 ```{{r}}
@@ -519,6 +519,9 @@ d.
 #| output: false
 2 + 2
 ```
+:::
+::: {.column width=20%}
+![](images/slido.png)
 :::
 :::
 
