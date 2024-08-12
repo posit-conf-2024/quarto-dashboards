@@ -113,10 +113,6 @@ If you have any difficulty with your connection please let us (myself and or the
 
 ## Asking for help
 
-::: callout-important
-TO DO: Update colors.
-:::
-
 ::: r-hstack
 ::: {style="text-align: center;"}
 ::: {data-id="box1" style="background: #FFC0CB; width: 200px; height: 200px; margin: 25px;"}
@@ -160,10 +156,6 @@ This is a great place to ask questions, share responses to exercises, post resou
 If you'd like to use your own system, please see [pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24) \> Setup.
 
 ## Posit Cloud
-
-::: callout-important
-TO DO: Get Marko to make a short link.
-:::
 
 You can use the following link to join the workshops Posit Cloud space:
 
