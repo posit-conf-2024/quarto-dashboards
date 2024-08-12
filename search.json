@@ -24,7 +24,7 @@
     "href": "setup.html#publishing-accounts",
     "title": "Setup instructions",
     "section": "Publishing accounts",
-    "text": "Publishing accounts\nYou do not need to publish your dashoard during the workshop, but it would be good pracice!\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Quarto Pub\nGitHub only if you are already a Git/GitHub user",
+    "text": "Publishing accounts\nYou do not need to publish your dashboard during the workshop, but it would be good practice!\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Quarto Pub\nGitHub only if you are already a Git/GitHub user",
     "crumbs": [
       "Setup"
     ]
