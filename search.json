@@ -54,11 +54,25 @@
     "text": "Introductions\n\n\n\n\n\n\n\n\nDr. Mine Çetinkaya-Rundel \nProfessor, Statistical Science, Duke University \nDeveloper Educator, Posit\n\n\n\n\n\n\n\n\nCarlos Schedigger,Software Engineer, Posit Alex Chisholm,Product Manager, Posit Ron Blum,QA Engineer, Posit"
   },
   {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#introductions-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#introductions-1",
+    "title": "Hello, dashboards!",
+    "section": "Introductions",
+    "text": "Introductions\n\nPlease share with the person next to / nearby you…\n\nYour name\nYour professional affiliation and/or where you’re from\nWhat you hope to get out of this workshop\n\n\n\n  \n    −\n    +\n \n 03:00"
+  },
+  {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#workshop-materials",
     "href": "1-hello-dashboards/1-hello-dashboards.html#workshop-materials",
     "title": "Hello, dashboards!",
     "section": "Workshop materials",
     "text": "Workshop materials\n\nOne link for all materials\n🔗 pos.it/quarto-dashboards-24"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#and-theyre-all-made-with",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#and-theyre-all-made-with",
+    "title": "Hello, dashboards!",
+    "section": "… and they’re all made with?",
+    "text": "… and they’re all made with?\n\nQuarto!"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#schedule",
@@ -114,14 +128,14 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#posit-cloud",
     "title": "Hello, dashboards!",
     "section": "Posit Cloud",
-    "text": "Posit Cloud\nYou can use the following link to join the workshops Posit Cloud space:\n\n\npos.it/quarto-dashboards-24-cloud\n\n\nOnce you have joined, navigate to Contents on the top menu."
+    "text": "Posit Cloud\nYou can use the following link to join the workshops Posit Cloud space:\n\n\n🔗 pos.it/quarto-dashboards-24-cloud\n\n\nOnce you have joined, navigate to Contents on the top menu."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#meeting-you-where-you-are",
     "href": "1-hello-dashboards/1-hello-dashboards.html#meeting-you-where-you-are",
     "title": "Hello, dashboards!",
     "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\nknow some R and/or Python\nhave worked in RStudio and/or VS Code\nhave worked with Quarto\nwant to learn about Quarto Dashboards\n\n\n\n\nI’ll teach you\n\nbasics of a Quarto Dashboard\nmaking your dashboards dashing\nsome R and/or Python tips along the way"
+    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\nknow some R and/or Python\nhave worked in RStudio and/or VS Code\nhave worked with Quarto\nwant to learn about Quarto Dashboards\n\n\n\n\nI’ll teach you\n\nbasics of a Quarto Dashboard\nmaking your dashboards dashing ✨\nsome R and/or Python tips along the way"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#checking-in-one-more-time",
@@ -170,7 +184,7 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#demo-olympic-games-dashboard",
     "title": "Hello, dashboards!",
     "section": "Demo: Olympic Games dashboard",
-    "text": "Demo: Olympic Games dashboard\n\nhttps://mine.quarto.pub/olympicdash-r\n\n\nhttps://mine.quarto.pub/olympicdash-py\n\n\nhttps://github.com/posit-conf-2024/olympicdash"
+    "text": "Demo: Olympic Games dashboard\n\n🔗 mine.quarto.pub/olympic-games"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
@@ -338,7 +352,7 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
     "title": "Hello, dashboards!",
     "section": "Step 1",
-    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 03:00"
+    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
