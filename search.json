@@ -845,7 +845,7 @@
     "href": "2-dashboard-components/2-dashboard-components.html#columns",
     "title": "Dashboard components",
     "section": "Columns",
-    "text": "Columns\nSetting orientation to rows makes each ## indicate a column instead of a row:\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n## Scatter\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n## Bar\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
+    "text": "Columns\nSetting orientation to columns makes each ## indicate a column instead of a row:\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{r}\nlibrary(ggplot2)\n```\n\n## Scatter\n\n```{r}\n#| title: Highway vs. city mileage\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()\n```\n\n## Bar\n\n```{r}\n#| title: Drive types\nggplot(mpg, aes(x = drv)) +\n  geom_bar()\n```"
   },
   {
     "objectID": "2-dashboard-components/2-dashboard-components.html#columns-1",
