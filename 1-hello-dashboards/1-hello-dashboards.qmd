@@ -89,11 +89,11 @@ Quarto!
 | Time          | Activity                                  |
 |:--------------|:------------------------------------------|
 | 09:00 - 10:30 | Hello, dashboards!                        |
-| 10:30 - 11:00 | ☕ *Coffee break*                         |
+| 10:30 - 11:00 | ☕ *Coffee break*                          |
 | 11:00 - 12:30 | Dashboard components                      |
 | 12:30 - 13:30 | 🍽️ *Lunch break*                          |
 | 13:30 - 15:00 | Theming and styling                       |
-| 15:00 - 15:30 | ☕ *Coffee break*                         |
+| 15:00 - 15:30 | ☕ *Coffee break*                          |
 | 15:30 - 17:00 | Parameters, interactivity, and deployment |
 | 16:30 - 17:00 | Quarto Q & A                              |
 
