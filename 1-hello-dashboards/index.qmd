@@ -2,10 +2,6 @@
 title: "Hello, Dashboards!"
 ---
 
-::: callout-note
-Materials for this module to be updated before the workshop start.
-:::
-
 ## Slides
 
 [View slides in full screen](1-hello-dashboards.html)
@@ -13,6 +9,7 @@ Materials for this module to be updated before the workshop start.
 ```{=html}
 <iframe class="slide-deck" src="1-hello-dashboards.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+
 ## Exercises
 
 To be posted.
