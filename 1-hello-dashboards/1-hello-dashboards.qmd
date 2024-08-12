@@ -55,6 +55,19 @@ Carlos Schedigger,<br>Software Engineer, Posit<br><br> Alex Chisholm,<br>Product
 :::
 :::
 
+## Introductions {.smaller}
+
+::: your-turn
+Please share with the person next to / nearby you…
+
+- Your name
+- Your professional affiliation and/or where you're from
+- What you hope to get out of this workshop
+:::
+
+{{< countdown minutes=3 >}}
+
+
 ## Workshop materials {.nostretch}
 
 ::: {style="text-align: center;"}
@@ -64,6 +77,12 @@ One link for all materials
 :::
 
 ![](../images/logo.png){fig-alt="Logo for workshop" fig-align="center"}
+
+## ... and they're all made with? {.center}
+
+::: {.hand-blue-large .fragment}
+Quarto!
+:::
 
 ## Schedule
 
@@ -162,7 +181,7 @@ You can use the following link to join the workshops Posit Cloud space:
 <br>
 
 ::: {style="text-align: center;"}
-[pos.it/quarto-dashboards-24-cloud](https://pos.it/quarto-dashboards-24-cloud)
+🔗 [pos.it/quarto-dashboards-24-cloud](https://pos.it/quarto-dashboards-24-cloud)
 :::
 
 <br>
@@ -192,7 +211,7 @@ I'll **teach** you
 
 -   basics of a Quarto Dashboard
 
--   making your dashboards *dashing*
+-   making your dashboards *dashing* ✨
 
 -   some R and/or Python tips along the way
 :::
@@ -266,17 +285,13 @@ quarto --version
 
 ## Demo: Olympic Games dashboard
 
-::: r-box
-<https://mine.quarto.pub/olympicdash-r>
+::: {style="text-align: center;"}
+🔗 [mine.quarto.pub/olympic-games](https://mine.quarto.pub/olympic-games/)
 :::
 
-::: python-box
-<https://mine.quarto.pub/olympicdash-py>
-:::
-
-::: code-box
-<https://github.com/posit-conf-2024/olympicdash>
-:::
+```{=html}
+<iframe src="https://mine.quarto.pub/olympic-games/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
+```
 
 ## Notebook ➝ Dashboard
 
@@ -811,7 +826,7 @@ Your goal is to create one of the following dashboards.
 :::
 :::
 
-{{< countdown minutes=3 >}}
+{{< countdown minutes=5 >}}
 
 ## Step 2
 
