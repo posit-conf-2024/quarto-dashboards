@@ -1,5 +1,5 @@
 ---
-title: "Module three"
+title: "Theming and styling"
 subtitle: "Build-a-Dashboard Workshop"
 author:   
   - name: Dr. Mine Çetinkaya-Rundel
@@ -15,8 +15,231 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-editor: visual
-execute:
-  freeze: auto
-  echo: true
 ---
+
+# Theming
+
+## Bootswatch themes {.smaller auto-animate="true"}
+
+Quarto dashboards can be styled with one of the 25 themes from the Bootswatch project:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-5"}
+{{< include _bootswatch.qmd >}}
+````
+:::
+
+## Bootswatch themes {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="3-5"}
+{{< include _bootswatch.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/bootswatch.png)
+:::
+:::
+
+## Bootswatch themes
+
+::: {.large .center-align}
+<https://bootswatch.com>
+:::
+
+```{=html}
+<iframe src="https://bootswatch.com" title = "Bootswatch themes" frameborder="1" height="500" width="1000"></iframe>
+```
+
+## Light and dark mode {.smaller auto-animate="true"}
+
+You can provide a light and dark theme and Quarto will automatically place a light/dark toggle on the navbar:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-7"}
+{{< include _light-dark.qmd >}}
+````
+:::
+
+## Light mode {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="6"}
+{{< include _light-dark.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/light.png)
+:::
+:::
+
+## Dark mode {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="7"}
+{{< include _light-dark.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/dark.png)
+:::
+:::
+
+## Custom themes
+
+::: incremental
+-   You can create an entirely custom theme and apply it to your dashboard:
+
+    ```` {.yaml}
+    format:
+      theme: style.scss
+    ````
+
+-   Or you can customize an existing Bootswatch theme:
+
+    ```` {.yaml}
+    format:
+      theme:
+        - cosmo
+        - custom.scss
+    ````
+:::
+
+## Custom light SCSS {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-5"}
+{{< include _custom-light.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/custom-light.png)
+:::
+:::
+
+## Custom light SCSS {.smaller}
+
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|1-7|9-12|14-19"}
+{{< include _custom-light.scss >}}
+````
+
+## Customizing Bootswatch themes 
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|5-7"}
+{{< include _custom-sandstone.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sandstone-custom-light.png)
+:::
+:::
+
+# Styling
+
+## A unified look
+
+::: incremental
+-   Achieving a unified look for your dashboard requires customizing your dashboard along with your plots and tables
+
+-   Choose colors thare complementary and visually appealing (at least to you) bu also following accessbility best practices
+
+-   Stick to pre-defined, accessible color scales where possible
+:::
+
+# Your turn
+
+## Start
+
+Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
+
+::: r-box
+Start with `olympicdash-r-3.qmd`.
+:::
+
+::: python-box
+Start with `olympicdash-py-3.qmd`.
+:::
+
+## Goal
+
+Your goal is to create a dashboard that looks like the following:
+
+![](images/olympicdash-r-3.png)
+
+## Step 1 {.smaller}
+
+::: your-turn
+- Update the theme to the appropriate Bootswatch theme.
+- Render the dashboard and identify what other aspects of the dashboard theme and cell outputs should be modified.
+:::
+
+::: callout-tip
+Work with your neighbor if you're having difficulty finding which team to use.
+:::
+
+![](images/olympicdash-r-3.png)
+
+{{< countdown minutes=5 >}}
+
+## Step 2 {.smaller}
+
+::: your-turn
+Add an SCSS file for custom styling and use it to augment the Bootswatch theme to get dashboard theme elements as close to the final goal as you can.
+:::
+
+::: callout-tip
+Use a tool like the Digital Color Picker to identify colors to be set.
+:::
+
+![](images/olympicdash-r-3.png)
+
+{{< countdown minutes=10 >}}
+
+## Step 3 {.smaller}
+
+::: your-turn
+Polish your plots to get them as close to the final goal as you can.
+:::
+
+![](images/olympicdash-r-3.png)
+
+{{< countdown minutes=10 >}}
+
+# Learn more
+
+## Theming Quarto
+
+A lot more to learn on theming all things Quarto!
+
+```{=html}
+<iframe src="https://quarto.org/docs/dashboards/theming.html" title = "Bootswatch themes" frameborder="1" height="500" width="1000"></iframe>
+```
+
+## Look forward to...
+
+These may or may not happen in the near / not-so-near future, but you might want to follow them:
+
+- Support for auto theming in quarto with the **thematic** R package: <https://github.com/rstudio/thematic/issues/125>
+
+- Improve the HTML Theming documentation page: <https://github.com/quarto-dev/quarto-cli/issues/8654>
