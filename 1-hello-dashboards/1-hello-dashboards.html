@@ -473,21 +473,8 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 </figure>
 </div>
 </section>
-<section id="schedule" class="slide level2 smaller">
+<section id="schedule" class="slide level2">
 <h2>Schedule</h2>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>TO DO: Update schedule.</p>
-</div>
-</div>
-</div>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -502,27 +489,31 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 </tr>
 <tr class="even">
 <td style="text-align: left;">10:30 - 11:00</td>
-<td style="text-align: left;"><em>Coffee break</em></td>
+<td style="text-align: left;">☕ <em>Coffee break</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">11:00 - 12:30</td>
-<td style="text-align: left;">Module 2</td>
+<td style="text-align: left;">Dashboard components</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">12:30 - 13:30</td>
-<td style="text-align: left;"><em>Lunch break</em></td>
+<td style="text-align: left;">🍽️ <em>Lunch break</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">13:30 - 15:00</td>
-<td style="text-align: left;">Module 3</td>
+<td style="text-align: left;">Theming and styling</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">15:00 - 15:30</td>
-<td style="text-align: left;"><em>Coffee break</em></td>
+<td style="text-align: left;">☕ <em>Coffee break</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">15:30 - 17:00</td>
-<td style="text-align: left;">Module 4</td>
+<td style="text-align: left;">Parameters, interactivity, and deployment</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">16:30 - 17:00</td>
+<td style="text-align: left;">Quarto Q &amp; A</td>
 </tr>
 </tbody>
 </table>
@@ -1081,7 +1072,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <span id="cb13-4" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
 <span id="cb13-5" class="hljs-ln-code"><a></a></span>
 <span id="cb13-6" class="hljs-ln-code"><a></a><span class="at">```{python}</span></span>
-<span id="cb13-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, geom_point, aes</span></span>
+<span id="cb13-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, aes, geom_point</span></span>
 <span id="cb13-8" class="hljs-ln-code"><a></a><span class="at">from plotnine.data import mpg</span></span>
 <span id="cb13-9" class="hljs-ln-code"><a></a><span class="at">```</span></span>
 <span id="cb13-10" class="hljs-ln-code"><a></a></span>
@@ -1109,7 +1100,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <span id="cb14-4" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
 <span id="cb14-5" class="hljs-ln-code"><a></a></span>
 <span id="cb14-6" class="hljs-ln-code"><a></a><span class="at">```{python}</span></span>
-<span id="cb14-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, geom_point, aes</span></span>
+<span id="cb14-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, aes, geom_point</span></span>
 <span id="cb14-8" class="hljs-ln-code"><a></a><span class="at">from plotnine.data import mpg</span></span>
 <span id="cb14-9" class="hljs-ln-code"><a></a><span class="at">```</span></span>
 <span id="cb14-10" class="hljs-ln-code"><a></a></span>
@@ -1138,7 +1129,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <span id="cb15-4" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
 <span id="cb15-5" class="hljs-ln-code"><a></a></span>
 <span id="cb15-6" class="hljs-ln-code"><a></a><span class="at">```{python}</span></span>
-<span id="cb15-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, geom_point, aes</span></span>
+<span id="cb15-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, aes, geom_point, geom_bar</span></span>
 <span id="cb15-8" class="hljs-ln-code"><a></a><span class="at">from plotnine.data import mpg</span></span>
 <span id="cb15-9" class="hljs-ln-code"><a></a><span class="at">```</span></span>
 <span id="cb15-10" class="hljs-ln-code"><a></a></span>
@@ -1173,7 +1164,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <span id="cb16-4" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
 <span id="cb16-5" class="hljs-ln-code"><a></a></span>
 <span id="cb16-6" class="hljs-ln-code"><a></a><span class="at">```{python}</span></span>
-<span id="cb16-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, geom_point, aes</span></span>
+<span id="cb16-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, aes, geom_point, geom_bar</span></span>
 <span id="cb16-8" class="hljs-ln-code"><a></a><span class="at">from plotnine.data import mpg</span></span>
 <span id="cb16-9" class="hljs-ln-code"><a></a><span class="at">```</span></span>
 <span id="cb16-10" class="hljs-ln-code"><a></a></span>
@@ -1209,7 +1200,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <span id="cb17-4" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
 <span id="cb17-5" class="hljs-ln-code"><a></a></span>
 <span id="cb17-6" class="hljs-ln-code"><a></a><span class="at">```{python}</span></span>
-<span id="cb17-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, geom_point, aes</span></span>
+<span id="cb17-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, aes, geom_point, geom_bar</span></span>
 <span id="cb17-8" class="hljs-ln-code"><a></a><span class="at">from plotnine.data import mpg</span></span>
 <span id="cb17-9" class="hljs-ln-code"><a></a><span class="at">```</span></span>
 <span id="cb17-10" class="hljs-ln-code"><a></a></span>
@@ -1246,7 +1237,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <span id="cb18-4" class="hljs-ln-code"><a></a><span class="pp">---</span></span>
 <span id="cb18-5" class="hljs-ln-code"><a></a></span>
 <span id="cb18-6" class="hljs-ln-code"><a></a><span class="at">```{python}</span></span>
-<span id="cb18-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, geom_point, aes</span></span>
+<span id="cb18-7" class="hljs-ln-code"><a></a><span class="at">from plotnine import ggplot, aes, geom_point, geom_bar</span></span>
 <span id="cb18-8" class="hljs-ln-code"><a></a><span class="at">from plotnine.data import mpg</span></span>
 <span id="cb18-9" class="hljs-ln-code"><a></a><span class="at">```</span></span>
 <span id="cb18-10" class="hljs-ln-code"><a></a></span>
@@ -1284,10 +1275,10 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <h2>Start</h2>
 <p>Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.</p>
 <div class="r-box">
-<p>Start with <code>olympicdash-r-1-begin.qmd</code>.</p>
+<p>Start with <code>olympicdash-r-1.qmd</code>.</p>
 </div>
 <div class="python-box">
-<p>Start with <code>olympicdash-py-1-begin.qmd</code>.</p>
+<p>Start with <code>olympicdash-py-1.qmd</code>.</p>
 </div>
 </section>
 <section id="goal" class="slide level2">
@@ -1322,7 +1313,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <p><img data-src="images/olympicdash-py-1.png"></p>
 </div>
 </div></div>
-<div id="timer_ab2065254f7af5b3d9230046b87528a5f6ea92c6" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_0411ecf917fdad9fc9219dc6b093ee2ac4bcecad" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -1348,7 +1339,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <p><img data-src="images/olympicdash-py-1.png"></p>
 </div>
 </div></div>
-<div id="timer_ab2065254f7af5b3d9230046b87528a5f6ea92c6" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_0411ecf917fdad9fc9219dc6b093ee2ac4bcecad" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -1371,7 +1362,7 @@ Dr.&nbsp;Mine Çetinkaya-Rundel
 <p><img data-src="images/olympicdash-py-1.png"></p>
 </div>
 </div></div>
-<div id="timer_ab2065254f7af5b3d9230046b87528a5f6ea92c6" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_0411ecf917fdad9fc9219dc6b093ee2ac4bcecad" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
