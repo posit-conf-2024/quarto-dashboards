@@ -2,10 +2,6 @@
 title: "Dashboard components"
 ---
 
-::: callout-note
-Materials for this module to be updated before the workshop start.
-:::
-
 ## Slides
 
 [View slides in full screen](2-dashboard-components.html)
