@@ -14,7 +14,7 @@
     "href": "setup.html#software",
     "title": "Setup instructions",
     "section": "Software",
-    "text": "Software\nYou will be able to follow along with this workshop in R or in Python. See the required software suite for each language below.\n\nR\n\nR: 4.4.1\nQuarto: v1.5\nRStudio: 2024.04.2+764\nPackages:\n\n\npkg_list &lt;- c(\n  \"tidyverse\", \"gt\", \"ggthemes\", \"DT\", \"here\"\n)\ninstall.packages(pkg_list)\n\n\n\nPython\n\nPython: 3\n\n\n\nQuarto: v1.5\nVS Code as well as the VS Code Quarto Extension and VS Code Jupyter Extension\nPackages: We recommend pip installing the following packages. If you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.\n\ngreat_tables==0.10.0\nipykernel==6.29.5\njupyter==1.0.0\npandas==2.2.2\nplotnine==0.13.6",
+    "text": "Software\nYou will be able to follow along with this workshop in R or in Python. See the required software suite for each language below.\n\nR\n\nR: 4.4.1\nQuarto: v1.5\nRStudio: 2024.04.2+764\nPackages:\n\n\npkg_list &lt;- c(\n  \"tidyverse\", \"gt\", \"ggthemes\", \"DT\", \"here\", \"paletteer\"\n)\ninstall.packages(pkg_list)\n\n\n\nPython\n\nPython: 3\nQuarto: v1.5\nVS Code as well as the VS Code Quarto Extension and VS Code Jupyter Extension\nPackages: We recommend pip installing the following packages. If you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.\n\ngreat_tables==0.10.0\nipykernel==6.29.5\njupyter==1.0.0\npandas==2.2.2\nplotnine==0.13.6",
     "crumbs": [
       "Setup"
     ]
