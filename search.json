@@ -324,7 +324,7 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#start",
     "title": "Hello, dashboards!",
     "section": "Start",
-    "text": "Start\nLocate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.\n\nStart with olympicdash-r-1.qmd.\n\n\nStart with olympicdash-py-1.qmd."
+    "text": "Start\n\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 1 - Hello, Dashboards!.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-1.qmd.\n\n\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-1.qmd."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#goal",
@@ -418,6 +418,13 @@
     "text": "Other interactivity\n\nObservable JS for client-side interactivity using the Observable dialect of JavaScript.\nJupyter Widgets or htmlwidgets for client-side interactivity based on standard Python and R JavaScript widget frameworks."
   },
   {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#start",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#start",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Start",
+    "text": "Start\n\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 4 - Parameters, interactivity, and deployment.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-4.qmd.\n\n\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-4.qmd."
+  },
+  {
     "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#goal",
     "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#goal",
     "title": "Parameters, interactivity,and deployment",
@@ -486,7 +493,7 @@
     "href": "2-dashboard-components/index.html#exercises",
     "title": "Dashboard components",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\n\nR:\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 2 - Dashboard components.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-2.qmd.\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-2.qmd.",
     "crumbs": [
       "Modules",
       "Dashboard components"
@@ -519,7 +526,7 @@
     "href": "3-theming-styling/index.html#exercises",
     "title": "Theming and styling",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\n\nR:\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 3 - Theming and styling.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-3.qmd.\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-3.qmd.",
     "crumbs": [
       "Modules",
       "Theming and styling"
@@ -614,7 +621,7 @@
     "href": "3-theming-styling/3-theming-styling.html#start",
     "title": "Theming and styling",
     "section": "Start",
-    "text": "Start\nLocate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.\n\nStart with olympicdash-r-3.qmd.\n\n\nStart with olympicdash-py-3.qmd."
+    "text": "Start\n\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 3 - Theming and styling.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-3.qmd.\n\n\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-3.qmd."
   },
   {
     "objectID": "3-theming-styling/3-theming-styling.html#goal",
@@ -1006,7 +1013,7 @@
     "href": "2-dashboard-components/2-dashboard-components.html#start",
     "title": "Dashboard components",
     "section": "Start",
-    "text": "Start\nLocate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.\n\nStart with olympicdash-r-2.qmd.\n\n\nStart with olympicdash-py-2.qmd."
+    "text": "Start\n\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 2 - Dashboards components.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-2.qmd.\n\n\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-2.qmd."
   },
   {
     "objectID": "2-dashboard-components/2-dashboard-components.html#goal",
@@ -1077,7 +1084,7 @@
     "href": "4-parameters-interactivity-deployment/index.html#exercises",
     "title": "Parameters, interactivity, deployment",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\n\nR:\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 4 - Parameters, interactivity, and deployment.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-4.qmd.\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-4.qmd.",
     "crumbs": [
       "Modules",
       "Parameters, interactivity, deployment"
@@ -1160,7 +1167,7 @@
     "href": "1-hello-dashboards/index.html#exercises",
     "title": "Hello, Dashboards!",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\n\nR:\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 1 - Hello, Dashboards!.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-1.qmd.\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-1.qmd.",
     "crumbs": [
       "Modules",
       "Hello, Dashboards!"
