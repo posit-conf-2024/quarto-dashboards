@@ -3,10 +3,6 @@ title: "Build-a-Dashboard Workshop"
 subtitle: "posit::conf(2024)"
 ---
 
-::: callout-important
-The materials will continue to be updated until the workshop.
-:::
-
 ## Date + location
 
 🗓️ August 12, 2024
