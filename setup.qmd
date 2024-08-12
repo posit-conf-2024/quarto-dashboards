@@ -45,7 +45,7 @@ plotnine==0.13.6
 
 ## Publishing accounts
 
-You do not need to publish your dashoard during the workshop, but it would be good pracice!
+You do not need to publish your dashboard during the workshop, but it would be good practice!
 
 To publish your website you'll need an account on one of Quarto's publishing venues:
 
