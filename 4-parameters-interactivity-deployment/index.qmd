@@ -15,4 +15,11 @@ Materials for this module to be updated before the workshop start.
 ```
 ## Exercises
 
-To be posted.
+-   R:
+
+    -   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `4 - Parameters, interactivity, and deployment`.
+
+    -   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-4.qmd.`
+
+-   Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-4.qmd.`
+

@@ -171,14 +171,14 @@ You can provide a light and dark theme and Quarto will automatically place a lig
 
 ## Start
 
-Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
-
 ::: r-box
-Start with `olympicdash-r-3.qmd`.
+-   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `3 - Theming and styling`.
+
+-   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-3.qmd.`
 :::
 
 ::: python-box
-Start with `olympicdash-py-3.qmd`.
+Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-3.qmd.`
 :::
 
 ## Goal

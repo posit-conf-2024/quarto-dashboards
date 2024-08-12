@@ -9,6 +9,13 @@ title: "Dashboard components"
 ```{=html}
 <iframe class="slide-deck" src="2-dashboard-components.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
+
 ## Exercises
 
-To be posted.
+-   R:
+
+    -   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `2 - Dashboard components`.
+
+    -   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-2.qmd.`
+
+-   Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-2.qmd.`

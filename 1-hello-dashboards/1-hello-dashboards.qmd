@@ -67,16 +67,16 @@ One link for all materials
 
 ## Schedule
 
-| Time          | Activity             |
-|:--------------|:---------------------|
-| 09:00 - 10:30 | Hello, dashboards!   |
-| 10:30 - 11:00 | ☕ *Coffee break*     |
-| 11:00 - 12:30 | Dashboard components |
-| 12:30 - 13:30 | 🍽️ *Lunch break*     |
-| 13:30 - 15:00 | Theming and styling  |
-| 15:00 - 15:30 | ☕ *Coffee break*     |
+| Time          | Activity                                  |
+|:--------------|:------------------------------------------|
+| 09:00 - 10:30 | Hello, dashboards!                        |
+| 10:30 - 11:00 | ☕ *Coffee break*                         |
+| 11:00 - 12:30 | Dashboard components                      |
+| 12:30 - 13:30 | 🍽️ *Lunch break*                          |
+| 13:30 - 15:00 | Theming and styling                       |
+| 15:00 - 15:30 | ☕ *Coffee break*                         |
 | 15:30 - 17:00 | Parameters, interactivity, and deployment |
-| 16:30 - 17:00 | Quarto Q & A         |
+| 16:30 - 17:00 | Quarto Q & A                              |
 
 ## WiFi
 
@@ -768,16 +768,16 @@ from plotnine.data import mpg
 
 # Your turn
 
-## Start
-
-Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
+## Start {.smaller}
 
 ::: r-box
-Start with `olympicdash-r-1.qmd`.
+-   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `1 - Hello, Dashboards!`.
+
+-   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-1.qmd.`
 :::
 
 ::: python-box
-Start with `olympicdash-py-1.qmd`.
+Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-1.qmd.`
 :::
 
 ## Goal
@@ -790,6 +790,7 @@ Your goal is to create one of the following dashboards.
 ![](images/olympicdash-r-1.png)
 :::
 :::
+
 ::: column
 ::: python-box
 ![](images/olympicdash-py-1.png)
@@ -800,8 +801,8 @@ Your goal is to create one of the following dashboards.
 ## Step 1
 
 ::: your-turn
-- Turn the output to a dashboard.
-- Add `title`s to code cells.
+-   Turn the output to a dashboard.
+-   Add `title`s to code cells.
 :::
 
 ::: columns
@@ -810,6 +811,7 @@ Your goal is to create one of the following dashboards.
 ![](images/olympicdash-r-1.png)
 :::
 :::
+
 ::: column
 ::: python-box
 ![](images/olympicdash-py-1.png)
@@ -822,10 +824,9 @@ Your goal is to create one of the following dashboards.
 ## Step 2
 
 ::: your-turn
-- Add a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you're building).
-- Add the olympics logo from the `images` folder.
+-   Add a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you're building).
+-   Add the olympics logo from the `images` folder.
 :::
-
 
 ::: columns
 ::: column
@@ -833,6 +834,7 @@ Your goal is to create one of the following dashboards.
 ![](images/olympicdash-r-1.png)
 :::
 :::
+
 ::: column
 ::: python-box
 ![](images/olympicdash-py-1.png)
@@ -848,13 +850,13 @@ Your goal is to create one of the following dashboards.
 Reorganize the cards into rows and columns as shown below.
 :::
 
-
 ::: columns
 ::: column
 ::: r-box
 ![](images/olympicdash-r-1.png)
 :::
 :::
+
 ::: column
 ::: python-box
 ![](images/olympicdash-py-1.png)

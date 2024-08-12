@@ -140,7 +140,7 @@ The content of cards typically maps to *cells* in your notebook or source docume
 
 ## Navigation buttons -- alternative {.smaller auto-animate="true"}
 
-Special aliases are recognized for certain navigation buttons: `linkedin`, `facebook`, `reddit`, `twitter`, and `github`. 
+Special aliases are recognized for certain navigation buttons: `linkedin`, `facebook`, `reddit`, `twitter`, and `github`.
 
 ::: {data-id="code"}
 ```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|6-7"}
@@ -411,7 +411,7 @@ This option is handy for adding more rows of cards to a dashboard, however sprea
 
 ```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12|24"}
 {{< include _per-page-controls.qmd >}}
-```` 
+````
 
 ## Tabsets {auto-animate="true"}
 
@@ -423,7 +423,7 @@ This option is handy for adding more rows of cards to a dashboard, however sprea
 
 ## Tabsets {.smaller auto-animate="true"}
 
-Each card within a row/column or each row/column within another becomes a tab: 
+Each card within a row/column or each row/column within another becomes a tab:
 
 ::: columns
 ::: {.column width="40%"}
@@ -493,26 +493,27 @@ Which of the following cells will become a card in a dashboard?
 
 ::: columns
 ::: column
-a. 
+a.  
 
 ```{{r}}
 library(palmerpenguins)
 ```
 
-b. 
+b.  
 
 ```{{r}}
 x <- 2
 ```
 :::
+
 ::: column
-c.
+c.  
 
 ```{{r}}
 plot(cars)
 ```
 
-d. 
+d.  
 
 ```{{r}}
 #| output: false
@@ -668,7 +669,7 @@ You can control layout of multiple outputs with `layout-ncol`:
     ```` {.yaml}
     ::: {.card title="Title goes here"}
     Text goes here.
-    
+
     ```{{r}}
     # code generating output goes here
     ```
@@ -680,14 +681,14 @@ You can control layout of multiple outputs with `layout-ncol`:
 
 ## Start
 
-Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
-
 ::: r-box
-Start with `olympicdash-r-2.qmd`.
+-   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `2 - Dashboards components`.
+
+-   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-2.qmd.`
 :::
 
 ::: python-box
-Start with `olympicdash-py-2.qmd`.
+Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-2.qmd.`
 :::
 
 ## Goal
@@ -699,8 +700,8 @@ Your goal is to create a dashboard that looks like the following:
 ## Step 1 {.smaller}
 
 ::: your-turn
-- Add two pages - one for Summer Olympics and one for Winter Olympics.
-- Duplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.
+-   Add two pages - one for Summer Olympics and one for Winter Olympics.
+-   Duplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.
 :::
 
 ![](images/olympicdash-r-2-step-1.png)
@@ -712,9 +713,9 @@ Your goal is to create a dashboard that looks like the following:
 ::: your-turn
 In the Summer Olympics page:
 
-- Make the columns 65% (first) and 35% (second) of width of the dashboard.
-- Divide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.
-- In the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.
+-   Make the columns 65% (first) and 35% (second) of width of the dashboard.
+-   Divide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.
+-   In the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.
 :::
 
 ![](images/olympicdash-r-2-step-2.png)
@@ -726,9 +727,9 @@ In the Summer Olympics page:
 ::: your-turn
 In the Summer Olympics page:
 
-- Divide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.
-- In the second row of the second column, create tables (using **gt** for R or **great_tables** for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
-- Place these tables in tabsets with descriptive text about table content in the same card/tab.
+-   Divide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.
+-   In the second row of the second column, create tables (using **gt** for R or **great_tables** for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
+-   Place these tables in tabsets with descriptive text about table content in the same card/tab.
 :::
 
 ![](images/olympicdash-r-2-step-3.png)

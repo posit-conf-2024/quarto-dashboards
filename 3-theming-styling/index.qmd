@@ -12,4 +12,10 @@ title: "Theming and styling"
 
 ## Exercises
 
-To be posted.
+-   R:
+
+    -   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `3 - Theming and styling`.
+
+    -   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-3.qmd.`
+
+-   Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-3.qmd.`
