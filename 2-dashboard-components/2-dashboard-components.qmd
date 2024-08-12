@@ -138,6 +138,16 @@ The content of cards typically maps to *cells* in your notebook or source docume
 :::
 :::
 
+## Navigation buttons -- alternative {.smaller auto-animate="true"}
+
+Special aliases are recognized for certain navigation buttons: `linkedin`, `facebook`, `reddit`, `twitter`, and `github`. 
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|6-7"}
+{{< include _nav-buttons-alternative.qmd >}}
+````
+:::
+
 # Sidebars, rows, columns, and tabsets
 
 ## Sidebars
@@ -445,6 +455,8 @@ Each card within a row/column or each row/column within another becomes a tab:
     This text will be displayed within a card
     :::
     ````
+
+-   Cards provide an **expand** button which appears at bottom right on hover
 :::
 
 ## Card titles {.smaller auto-animate="true"}
@@ -561,12 +573,184 @@ You can control layout of multiple outputs with `layout-ncol`:
 :::
 :::
 
+## Value boxes {.smaller}
+
+::: incremental
+-   Value boxes are a great way to prominently display simple values within a dashboard
+
+-   You can create value boxes in executable cells or plain markdown in divs
+
+-   Value boxes use Bootstrap icons (<https://icons.getbootstrap.com>) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we'll get to themes later!)
+
+    | Color alias | Default theme color(s) |
+    |-------------|------------------------|
+    | `primary`   | Blue                   |
+    | `secondary` | Gray                   |
+    | `success`   | Green                  |
+    | `info`      | Bright Blue            |
+    | `warning`   | Yellow/Orange          |
+    | `danger`    | Red                    |
+    | `light`     | Light Gray             |
+    | `dark`      | Black                  |
+:::
+
 ## Value boxes
 
-## Markdown text
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|11|13-28|30-38|40-48|50-54|56"}
+{{< include _valueboxes-r.qmd >}}
+````
+:::
+:::
 
-## Expanding Cards
+## Value boxes {.smaller auto-animate="true"}
 
-Cards provide an **Expand** button which appears at bottom right on hover:
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="30-38,40-48,50-54"}
+{{< include _valueboxes-r.qmd >}}
+````
+:::
+:::
+:::
 
-![](images/expanding-cards.png)
+::: {.column width="60%"}
+![](images/valueboxes-r.png)
+:::
+:::
+
+## Value boxes {auto-animate="true"}
+
+::: {data-id="code"}
+::: python-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|11|13-25|27-35|37-45|47-51|53"}
+{{< include _valueboxes-py.qmd >}}
+````
+:::
+:::
+
+## Value boxes {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+::: python-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="27-35,37-45,47-51"}
+{{< include _valueboxes-py.qmd >}}
+````
+:::
+:::
+:::
+
+::: {.column width="60%"}
+![](images/valueboxes-py.png)
+:::
+:::
+
+## Markdown text {.smaller}
+
+::: incremental
+-   You can include markdown text anywhere within a dashboard
+
+-   Markdown text is automatically placed in cards, but you can also explicitly put them in cards with fenced divs, and add titles to cards
+
+    ```` {.yaml}
+    ::: {.card title="Title goes here"}
+    Text goes here.
+    :::
+    ````
+
+-   You can place markdown text and other cell output in a single card as well
+
+    ```` {.yaml}
+    ::: {.card title="Title goes here"}
+    Text goes here.
+    
+    ```{{r}}
+    # code generating output goes here
+    ```
+    :::    
+    ````
+:::
+
+# Your turn
+
+## Start
+
+Locate one of the following documents, depending on whether you prefer to work in R or Python, either in Posit Cloud or the computing environment of your choice.
+
+::: r-box
+Start with `olympicdash-r-2.qmd`.
+:::
+
+::: python-box
+Start with `olympicdash-py-2.qmd`.
+:::
+
+## Goal
+
+Your goal is to create a dashboard that looks like the following:
+
+![](images/olympicdash-r-2.png)
+
+## Step 1 {.smaller}
+
+::: your-turn
+- Add two pages - one for Summer Olympics and one for Winter Olympics.
+- Duplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.
+:::
+
+![](images/olympicdash-r-2-step-1.png)
+
+{{< countdown minutes=5 >}}
+
+## Step 2 {.smaller}
+
+::: your-turn
+In the Summer Olympics page:
+
+- Make the columns 65% (first) and 35% (second) of width of the dashboard.
+- Divide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.
+- In the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.
+:::
+
+![](images/olympicdash-r-2-step-2.png)
+
+{{< countdown minutes=5 >}}
+
+## Step 3 {.smaller}
+
+::: your-turn
+In the Summer Olympics page:
+
+- Divide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.
+- In the second row of the second column, create tables (using **gt** for R or **great_tables** for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
+- Place these tables in tabsets with descriptive text about table content in the same card/tab.
+:::
+
+![](images/olympicdash-r-2-step-3.png)
+
+{{< countdown minutes=10 >}}
+
+## Step 4 {.smaller}
+
+::: your-turn
+In the first row of the second column of the Summer Olympics page, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the `award-fill` icon.
+:::
+
+![](images/olympicdash-r-2-step-4.png)
+
+{{< countdown minutes=10 >}}
+
+## Step 5 {.smaller}
+
+::: your-turn
+Duplicate dashboard content for the Winter Olympics page, share your results with your neighbor, and discuss approaches for not repeating yourself in your code.
+:::
+
+![](images/olympicdash-r-2-step-5.png)
+
+{{< countdown minutes=5 >}}
