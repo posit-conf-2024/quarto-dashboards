@@ -15,10 +15,6 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-editor: visual
-execute:
-  freeze: auto
-  echo: true
 ---
 
 ## Dashboard Deployment
@@ -142,7 +138,7 @@ Using [Pyodide](https://pyodide.org/)
 ## Resources {style="margin-top: 0.6em; font-size: 1em;"}
 
 |                   |                                                                        |
-|------------------------|------------------------------------------------|
+|------------------------|-----------------------------------------------|
 | About Quarto      | <https://quarto.org/>                                                  |
 | Quarto Dashboards | <https://quarto.org/docs/dashboards/>                                  |
 | Shiny for R.      | <https://shiny.posit.co/r/>                                            |
