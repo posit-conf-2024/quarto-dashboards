@@ -50,7 +50,7 @@ list(
 ::: {.valuebox icon="fuel-pump" color="secondary"}
 Average city mileage
 
-`{{r}} rounded_mean_city_mileage` mpg
+`{r} rounded_mean_city_mileage` mpg
 :::
 
 ## Plots {height="75%"}
