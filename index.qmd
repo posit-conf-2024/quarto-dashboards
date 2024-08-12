@@ -13,17 +13,16 @@ subtitle: "posit::conf(2024)"
 
 ## Schedule
 
-| Time          | Activity          |
-|:--------------|:------------------|
-| 09:00 - 10:30 | [Hello, Dashboards!](1-hello-dashboards/)          |
-| 10:30 - 11:00 | ☕ *Coffee break* |
-| 11:00 - 12:30 | [Dashboard components](2-dashboard-components/)    |
-| 12:30 - 13:30 | 🍽️ *Lunch break*  |
-| 13:30 - 15:00 | [Theming and styling](3-themint-styling/)          |
-| 15:00 - 15:30 | ☕ *Coffee break* |
+| Time          | Activity                                                                            |
+|:--------------|:------------------------------------------------------------------------------------|
+| 09:00 - 10:30 | [Hello, Dashboards!](1-hello-dashboards/)                                           |
+| 10:30 - 11:00 | ☕ *Coffee break*                                                                   |
+| 11:00 - 12:30 | [Dashboard components](2-dashboard-components/)                                     |
+| 12:30 - 13:30 | 🍽️ *Lunch break*                                                                    |
+| 13:30 - 15:00 | [Theming and styling](3-themint-styling/)                                           |
+| 15:00 - 15:30 | ☕ *Coffee break*                                                                   |
 | 15:30 - 17:00 | [Parameters, interactivity, and deployment](4-parameters-interactivity-deployment/) |
-| 16:30 - 17:00 | Quarto Q & A |
-
+| 16:30 - 17:00 | Quarto Q & A                                                                        |
 
 ## Overview
 

@@ -23,7 +23,7 @@ See the required software suite for each language below.
 #| eval: false
 
 pkg_list <- c(
-  "tidyverse", "gt", "ggthemes", "DT", "here"
+  "tidyverse", "gt", "ggthemes", "DT", "here", "paletteer"
 )
 install.packages(pkg_list)
 ```
@@ -31,17 +31,11 @@ install.packages(pkg_list)
 ### Python
 
 -   [Python](https://www.python.org/downloads/): 3
-
-```{=html}
-<!-- -->
-```
 -   [Quarto](https://quarto.org/docs/download/): v1.5
-
 -   [VS Code](https://code.visualstudio.com/download) as well as the [VS Code Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) and [VS Code Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
-
 -   Packages: We recommend `pip install`ing the following packages. If you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.
 
-```
+```         
 great_tables==0.10.0
 ipykernel==6.29.5
 jupyter==1.0.0
@@ -60,12 +54,10 @@ To publish your website you'll need an account on one of Quarto's publishing ven
 
 ## Discord
 
-We're not going to be making heavy use of Discord during the workshop, but it's a great place to share code snippets for questions that come up or (inevitable) typos that need to be fixed. 
+We're not going to be making heavy use of Discord during the workshop, but it's a great place to share code snippets for questions that come up or (inevitable) typos that need to be fixed.
 
 More importantly, it's a great place to connect with other conference attendees.
 
-- [pos.it/conf-event-portal](http://pos.it/conf-event-portal) > Login
-- Click on "Join Discord, the virtual networking platform!"
-- Browse Channels -> #workshop-quarto-dashboards
-
-
+-   [pos.it/conf-event-portal](http://pos.it/conf-event-portal) \> Login
+-   Click on "Join Discord, the virtual networking platform!"
+-   Browse Channels -\> #workshop-quarto-dashboards
