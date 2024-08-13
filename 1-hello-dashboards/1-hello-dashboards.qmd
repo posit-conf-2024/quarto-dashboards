@@ -289,14 +289,24 @@ quarto --version
 
 ##  {.no-line background-image="images/dashboards/stock-explorer.png" background-size="contain"}
 
-## Demo: Olympic Games dashboard
+## 🍰 Olympic Games dashboard - R
 
-::: {style="text-align: center;"}
-🔗 [mine.quarto.pub/olympic-games](https://mine.quarto.pub/olympic-games/)
+::: r-box
+🔗 [mine.quarto.pub/olympic-games-r](https://mine.quarto.pub/olympic-games-r/)
 :::
 
 ```{=html}
-<iframe src="https://mine.quarto.pub/olympic-games/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
+<iframe src="https://mine.quarto.pub/olympic-games-r/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
+```
+
+## 🍰 Olympic Games dashboard - Python
+
+::: python-box
+🔗 [mine.quarto.pub/olympic-games-py](https://mine.quarto.pub/olympic-games-py/)
+:::
+
+```{=html}
+<iframe src="https://mine.quarto.pub/olympic-games-py/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
 ```
 
 ## Notebook ➝ Dashboard
