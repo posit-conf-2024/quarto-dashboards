@@ -460,6 +460,13 @@
     "text": "Time for Q&A!"
   },
   {
+    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#qa-after-workshop",
+    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#qa-after-workshop",
+    "title": "Parameters, interactivity,and deployment",
+    "section": "Q&A after workshop",
+    "text": "Q&A after workshop\nhttps://github.com/quarto-dev/quarto-cli/discussions"
+  },
+  {
     "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#feedback",
     "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#feedback",
     "title": "Parameters, interactivity,and deployment",
@@ -656,7 +663,7 @@
     "href": "3-theming-styling/3-theming-styling.html#step-1",
     "title": "Theming and styling",
     "section": "Step 1",
-    "text": "Step 1\n\n\nUpdate the theme to the appropriate Bootswatch theme.\nRender the dashboard and identify what other aspects of the dashboard theme and cell outputs should be modified.\n\n\n\n\n\n\n\n\nTip\n\n\nWork with your neighbor if you’re having difficulty finding which team to use.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 1\n\n\nUpdate the theme to the appropriate Bootswatch theme.\nRender the dashboard and identify what other aspects of the dashboard theme and cell outputs should be modified.\n\n\n\n\n\n\n\n\nTip\n\n\nWork with your neighbor if you’re having difficulty finding which theme to use.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "3-theming-styling/3-theming-styling.html#step-2",
@@ -684,7 +691,7 @@
     "href": "3-theming-styling/3-theming-styling.html#look-forward-to",
     "title": "Theming and styling",
     "section": "Look forward to…",
-    "text": "Look forward to…\nThese may or may not happen in the near / not-so-near future, but you might want to follow them:\n\nSupport for auto theming in quarto with the thematic R package: https://github.com/rstudio/thematic/issues/125\nImprove the HTML Theming documentation page: https://github.com/quarto-dev/quarto-cli/issues/8654\n\n\n\n\n\npos.it/quarto-dashboards-24"
+    "text": "Look forward to…\nThese may or may not happen in the near / not-so-near future, but you might want to follow them:\n\n_brand.yml: https://github.com/quarto-dev/quarto-cli/issues/10249\nSupport for auto theming in quarto with the thematic R package: https://github.com/rstudio/thematic/issues/125\nImprove the HTML Theming documentation page: https://github.com/quarto-dev/quarto-cli/issues/8654\n\n\n\n\n\npos.it/quarto-dashboards-24"
   },
   {
     "objectID": "2-dashboard-components/2-dashboard-components.html#navigation-bar-and-pages",
@@ -1083,7 +1090,7 @@
     "href": "4-parameters-interactivity-deployment/index.html",
     "title": "Parameters, interactivity, deployment",
     "section": "",
-    "text": "Note\n\n\n\nMaterials for this module to be updated before the workshop start.",
+    "text": "View slides in full screen",
     "crumbs": [
       "Modules",
       "Parameters, interactivity, deployment"
@@ -1093,8 +1100,8 @@
     "objectID": "4-parameters-interactivity-deployment/index.html#slides",
     "href": "4-parameters-interactivity-deployment/index.html#slides",
     "title": "Parameters, interactivity, deployment",
-    "section": "Slides",
-    "text": "Slides\nView slides in full screen",
+    "section": "",
+    "text": "View slides in full screen",
     "crumbs": [
       "Modules",
       "Parameters, interactivity, deployment"
