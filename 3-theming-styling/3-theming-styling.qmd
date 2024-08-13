@@ -195,7 +195,7 @@ Your goal is to create a dashboard that looks like the following:
 :::
 
 ::: callout-tip
-Work with your neighbor if you're having difficulty finding which team to use.
+Work with your neighbor if you're having difficulty finding which theme to use.
 :::
 
 ![](images/olympicdash-r-3.png)
@@ -240,6 +240,9 @@ A lot more to learn on theming all things Quarto!
 
 These may or may not happen in the near / not-so-near future, but you might want to follow them:
 
+- `_brand.yml`: <https://github.com/quarto-dev/quarto-cli/issues/10249>
+
 - Support for auto theming in quarto with the **thematic** R package: <https://github.com/rstudio/thematic/issues/125>
 
 - Improve the HTML Theming documentation page: <https://github.com/quarto-dev/quarto-cli/issues/8654>
+

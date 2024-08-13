@@ -209,6 +209,10 @@ Deploy your latest dashboard to QuartoPub.
 
 ## Time for Q&A! {.center}
 
+## Q&A after workshop {.center}
+
+<https://github.com/quarto-dev/quarto-cli/discussions>
+
 ## Feedback
 
 Please fill out the workshop survey at <https://pos.it/conf-workshop-survey>.
