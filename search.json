@@ -187,11 +187,18 @@
     "text": "Quarto version\n\n\n\n\n\n\nTip\n\n\nRun the following in your Terminal to find your Quarto version:\n\n\nTerminal\n\nquarto --version"
   },
   {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#demo-olympic-games-dashboard",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#demo-olympic-games-dashboard",
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard---r",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard---r",
     "title": "Hello, dashboards!",
-    "section": "Demo: Olympic Games dashboard",
-    "text": "Demo: Olympic Games dashboard\n\n🔗 mine.quarto.pub/olympic-games"
+    "section": "🍰 Olympic Games dashboard - R",
+    "text": "🍰 Olympic Games dashboard - R\n\n🔗 mine.quarto.pub/olympic-games-r"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard---python",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard---python",
+    "title": "Hello, dashboards!",
+    "section": "🍰 Olympic Games dashboard - Python",
+    "text": "🍰 Olympic Games dashboard - Python\n\n🔗 mine.quarto.pub/olympic-games-py"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
